@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Eric Bredder-ETR238</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+
+  <!-- Scripts
+ –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script defer src="js/fontawesome-all.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div class="two-thirds column" style="margin-top: 15%">
+        <h2>ETR 238 - Industrial Electronics II</h2>
+          <p><a href="http://www.pvcc.edu/" target="_blank">Piedmont Virginia Community College</a><br>
+            Sping 2018 - Tuesday 7:00 PM - 9:45 PM<br>
+            <a href="Sp18ETR238/ETR238-Industrial Electronics-SyllabusSPRING2018.pdf" target="_blank">Syllabus</a> </p>
+      </div>
+      <div class="one-third column" style="margin-top: 15%" align="right">
+        <p><a href=#intro>Introduction & Review</a><br>
+        <a href=#jan9>1.9.18</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-section" id="intro">
+    <div class="row">
+      <div class="column">
+        <h5>Introduction & Review</h5>
+        <p>Industrial Electronics I covered the introduction to process loops, controls, DC motors, servo motors, ladder logic, protoyping and troubleshooting a system.</p>
+        <p>Software used in this class was primarily centered around prototyping with the <a href="https://www.arduino.cc/en/Main/Software" target="_blank">Arduino IDE</a> and designing flow charts with <a href="http://www.inkscape.org" target="_blank">Inkscape</a>:<br>
+        <i class="fab fa-youtube"></i> <a href="https://www.youtube.com/watch?v=G5LI695MiLY" target="_blank">Inkscape: Basic Flow Charts</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="post-section" id="jan9">
+    <div class="row">
+      <div class="column">
+        <h5>1.9.18</h5>
+        <p><a href="http://a.co/7wRpIk7" target="_blank">Required Class Materials</a><br>
+          <a href="https://goo.gl/forms/f8M8veHx4oOlu0ig2" target="_blank">Safety Contract</a><br>
+          <a href="https://goo.gl/forms/YL6x6JHbn7iPbmQ63" target="_blank">Photo Release Form</a></p>
+          <p>This class served as an introduction to Stepper Motors and a review of the Arduino platform. We set up a simple controller utilizing <a href="Sp18ETR238/uln2003a.pdf" target="_blank">ULN2003</a> and <a href="Sp18ETR238/l293.pdf" target="_blank">L293D</a> motor drivers to control 8-phase, geared stepper motor: <a href="Sp18ETR238/28BYJ-48.pdf" target="_blank">28BYJ-48</a>. Our goals in this class were tiered as follows:</p>
+          <div class="row">
+            <div class="one-third column">
+              <p><u>Level 1:</u> Use the Arduino platform and one of the two driver choices to perform a full rotation clockwise and counter-clockwise.</p>
+            </div>
+            <div class="one-third column">
+              <p><u>Level 2:</u> Use the Arduino platform, one of the drivers, and a pushbutton or potentiometer as an input to control start/stop and rotation of the stepper motor.</p>
+            </div>
+            <div class="one-third column">
+              <p><u>Level 3:</u> Use the Arduino platform, one driver, a pushbutton/potentiometer, and a hall effect sensor to gain feedback/control of the stepper position.</p>
+            </div>
+          </div>
+          <p><i class="far fa-image"></i> <a href="Sp18ETR238/ULN2003pinout.jpg" target="_blank">ULN2003 Pinout</a><br>
+          <i class="far fa-image"></i> <a href="Sp18ETR238/L293D-pin-out.gif" target="_blank">L293D Pinout</a><br>
+          <i class="far fa-image"></i> <a href="Sp18ETR238/SingleStepper_schem.jpg" target="_blank">Stepper - Schematic</a><br>
+          <i class="far fa-image"></i> <a href="Sp18ETR238/SingleStepper_bb.jpg" target="_blank">Stepper - Breadboard</a><br>
+          <i class="far fa-file-alt"></i> <a href="Sp18ETR238/SingleStepper.fzz" target="_blank">Stepper - Fritzing<br></a>
+          <i class="far fa-file-code"></i> <a href="Sp18ETR238/StepperFullRotation.ino" target="_blank">Stepper Full Rotation Firmware (Arduino)<br></a>
+          <i class="far fa-file-code"></i> <a href="Sp18ETR238/StepperHalfBackForth.ino" target="_blank">Stepper Back Forth Firmware (Arduino)</a></p>
+          <p>Resources:<br>
+            <i class="fas fa-external-link-alt"></i> <a href="https://learn.adafruit.com/all-about-stepper-motors/types-of-steppers" target="_blank">All About Stepper Motors - Adafruit</a><br>
+            <i class="fas fa-external-link-alt"></i> <a href="https://learn.adafruit.com/adafruit-motor-shield" target="_blank">Arduino Motor Shield</a></p>
+
+          </div>
+        </div>
+      </div>
+
+  <div class="footer-section">
+    <div class="row">
+      <div class"column" align="center">
+        <p><a href="index.html">ebredder.org</a> | <i class="far fa-copyright"></i> 2018 - Eric Bredder</p>
+      </div>
+    </div>
+  </div>
+
+  <!-- End Document
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
