@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (unknown)"
-   sodipodi:docname="HalfWaveVout_Formula.svg">
+   sodipodi:docname="HalfWaveVout_Formula.svg"
+   inkscape:export-filename="/home/eric/Documents/Github/ebredder.github.io/Sp18ETR203/HalfWaveVout_Formula.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,7 +29,7 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4609989"
-     inkscape:cx="-102.38361"
+     inkscape:cx="-218.74236"
      inkscape:cy="-42.949587"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
@@ -48,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>

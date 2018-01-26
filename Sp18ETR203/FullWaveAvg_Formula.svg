@@ -15,7 +15,10 @@
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (unknown)"
-   sodipodi:docname="FullWaveAvg_Formula.svg">
+   sodipodi:docname="FullWaveAvg_Formula.svg"
+   inkscape:export-filename="/home/eric/Documents/Github/ebredder.github.io/Sp18ETR203/FullWaveAvg_Formula.png"
+   inkscape:export-xdpi="96"
+   inkscape:export-ydpi="96">
   <defs
      id="defs2" />
   <sodipodi:namedview
@@ -26,8 +29,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="5.8439955"
-     inkscape:cx="16.887228"
-     inkscape:cy="11.032029"
+     inkscape:cx="-40.778799"
+     inkscape:cy="10.347566"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -48,7 +51,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -69,9 +72,9 @@
          y="124.64285"
          style="stroke-width:0.26458332">V<tspan
    style="font-size:64.99999762%;baseline-shift:sub"
-   id="tspan4937">avg</tspan><tspan
+   id="tspan4937">avg </tspan><tspan
    id="tspan4843"
-   style="font-size:64.99999762%;baseline-shift:sub"> </tspan>= <tspan
+   style="font-size:64.99999762%;baseline-shift:sub" />= <tspan
    style="font-size:6.3499999px"
    id="tspan4900">2</tspan>V<tspan
    id="tspan4755"
