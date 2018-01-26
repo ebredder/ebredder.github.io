@@ -9,9 +9,9 @@
    xmlns="http://www.w3.org/2000/svg"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
-   width="59.386433mm"
-   height="11.7462mm"
-   viewBox="0 0 59.386434 11.746199"
+   width="20.951235mm"
+   height="4.1440001mm"
+   viewBox="0 0 20.951235 4.1439998"
    version="1.1"
    id="svg8"
    inkscape:version="0.92.2 (unknown)"
@@ -26,8 +26,8 @@
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
      inkscape:zoom="1.4609989"
-     inkscape:cx="36.562419"
-     inkscape:cy="-42.949588"
+     inkscape:cx="-102.38361"
+     inkscape:cy="-42.949587"
      inkscape:document-units="mm"
      inkscape:current-layer="layer1"
      showgrid="false"
@@ -56,23 +56,23 @@
      inkscape:label="Layer 1"
      inkscape:groupmode="layer"
      id="layer1"
-     transform="translate(-90.954336,-117.39485)">
+     transform="translate(-90.954335,-124.99705)">
     <text
        xml:space="preserve"
-       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:1.25;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond Italic';letter-spacing:0px;word-spacing:0px;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.26458332"
-       x="89.958336"
-       y="124.64285"
+       style="font-style:italic;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:4.23353958px;line-height:1.25;font-family:'EB Garamond';-inkscape-font-specification:'EB Garamond Italic';letter-spacing:0px;word-spacing:0px;baseline-shift:baseline;fill:#000000;fill-opacity:1;stroke:none;stroke-width:0.09334366"
+       x="90.602951"
+       y="127.55411"
        id="text4749"><tspan
          sodipodi:role="line"
          id="tspan4747"
-         x="89.958336"
-         y="124.64285"
-         style="baseline-shift:baseline;stroke-width:0.26458332">V<tspan
-   style="font-size:64.99999762%;baseline-shift:sub"
+         x="90.602951"
+         y="127.55411"
+         style="baseline-shift:baseline;stroke-width:0.09334366">V<tspan
+   style="font-size:2.75180054px;baseline-shift:sub;stroke-width:0.09334366"
    id="tspan4850">out</tspan> = V<tspan
-   style="font-size:64.99999762%;baseline-shift:sub"
+   style="font-size:2.75180054px;baseline-shift:sub;stroke-width:0.09334366"
    id="tspan4848">p</tspan> - V<tspan
-   style="font-size:64.99999762%;baseline-shift:sub"
+   style="font-size:2.75180054px;baseline-shift:sub;stroke-width:0.09334366"
    id="tspan4845">f</tspan></tspan></text>
   </g>
 </svg>
