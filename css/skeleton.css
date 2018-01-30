@@ -38,6 +38,7 @@
 
 
 .post-section {
+  position: relative;
   border-top: 1px solid #eee;
   width: 100%;
   max-width: 960px;
@@ -46,6 +47,7 @@
   box-sizing: border-box; }
 
 .footer-section {
+  position: relative;
   border-top: 1px solid #333;
   width: 100%;
   max-width: 960px;
