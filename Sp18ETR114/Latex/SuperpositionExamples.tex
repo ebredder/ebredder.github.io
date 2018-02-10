@@ -1,0 +1,116 @@
+\documentclass[tikz]{article}
+\usepackage[siunitx]{circuitikz}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[margin=.5in]{geometry}
+\usepackage{mathtools}
+
+\begin{document}
+
+  \section{Example}
+
+Determine the values of $V\textsubscript{1}$, $V\textsubscript{2}$, and $V\textsubscript{3}$:
+
+\begin{circuitikz} \draw
+
+  (0,0) to [battery,l=12<\volt>] (0,4)
+  to [resistor, l=30 <\ohm>] (4,4)
+  to [resistor, l=10 <\ohm>] (4,0)
+  (4,4) to [resistor, l=15 <\ohm>] (8,4)
+  (8,0) to [battery, l=9<\volt>] (8,4)
+  (8,0) -- (0,0)
+  (4,0) node[ground]{}
+  ;
+\end{circuitikz}
+
+Begin by splitting the circuits based on their individual power supplies:
+
+\begin{circuitikz} \draw
+
+  (0,0) to [battery,l=12<\volt>] (0,4)
+  to [resistor, l=30 <\ohm>, v=<\volt>] (4,4)
+  to [resistor, l=6 <\ohm>, v=<\volt>] (4,0)
+  (1,6) -- (3,6)
+  (4,0) -- (0,0)
+  (4,0) node[ground]{}
+  ;
+
+\end{circuitikz}
+
+$$R_{EQ} = R_2 || R_3 = 15 \Omega || 10 \Omega = 6 \Omega$$
+$$V_{EQ} = V_A \frac{R_{EQ}}{R_{EQ}+R_1} = (12V) \frac{6\Omega}{36\Omega}=2V$$
+$$V_{2A} = V_{3A} = 2V$$
+$$V_1 = V_A-V_{EQ}=12V-2V=10V$$
+
+\begin{circuitikz} \draw
+
+  (8,0) to [battery, l=9<\volt>] (8,4)
+  to [resistor, l=15 <\ohm>] (4,4)
+  to [resistor, l=7.5 <\ohm>] (4,0)
+  (4,0) -- (8,0)
+  (4,0) node[ground]{}
+  ;
+
+\end{circuitikz}
+
+$$R_{EQ} = R_1 || R_3 = 30 \Omega || 10 \Omega = 7.5 \Omega$$
+$$V_{EQ} = V_B \frac{R_{EQ}}{R_{EQ}+R_1} = (9V) \frac{7.5\Omega}{22.5\Omega}=3V$$
+$$V_{1B} = V_{3B} = 3V$$
+$$V_2 = V_B-V_{EQ}=9V-2V=6V$$
+
+To determine the component voltages, we need to combine the above results:
+
+$$V_1=V_{1A}-V_{1B}=10V-3V=7V$$
+$$V_2=V_{2B}-V_{2A}=6V-2V=4V$$
+$$V_3=V_{3A}+V_{3B}=2V+3V=5V$$
+
+The final circuit with voltages:
+
+\begin{circuitikz} \draw
+
+  (0,0) to [battery,l=12<\volt>] (0,4)
+  (0,4) to [resistor, l=30 <\ohm>,v=7V] (4,4)
+  to [resistor, l=10 <\ohm>,v=5V] (4,0)
+  (4,4) to [resistor, l=15 <\ohm>,v=4V] (8,4)
+  (8,0) to [battery, l=9<\volt>] (8,4)
+  (8,0) -- (0,0)
+  (4,0) node[ground]{}
+  ;
+\end{circuitikz}
+
+  \section{Problems}
+
+  Determine the values of $V\textsubscript{1}$, $V\textsubscript{2}$, and $V\textsubscript{3}$:
+
+  \begin{circuitikz} \draw
+
+    (0,0) to [battery,l=5<\volt>] (0,4)
+    to [resistor, l=10 <\ohm>] (4,4)
+    to [resistor, l=6 <\ohm>] (4,0)
+    (4,4) to [resistor, l=12 <\ohm>] (8,4)
+    (8,0) to [battery, l=3.3<\volt>] (8,4)
+    (8,0) -- (0,0)
+    (4,0) node[ground]{}
+    ;
+  \end{circuitikz}
+
+  What are the circuit currents and their values?\\
+
+  Determine the values of $V\textsubscript{1}$, $V\textsubscript{2}$, and $V\textsubscript{3}$:
+
+  \begin{circuitikz} \draw
+
+    (0,0) to [battery,l=24<\volt>] (0,4)
+    to [resistor, l=100 <\ohm>] (4,4)
+    to [resistor, l=22 <\ohm>] (4,0)
+    (4,4) to [resistor, l=470 <\ohm>] (8,4)
+    (8,0) to [battery, l=10<\volt>] (8,4)
+    (8,0) -- (0,0)
+    (4,0) node[ground]{}
+    ;
+  \end{circuitikz}
+
+  What are the circuit currents and their values?
+
+\end{document}
