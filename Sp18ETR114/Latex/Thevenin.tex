@@ -1,0 +1,77 @@
+\documentclass[tikz]{article}
+\usepackage[siunitx]{circuitikz}
+\usepackage{siunitx}
+\usepackage{graphicx}
+\usepackage{subcaption}
+\usepackage[margin=.5in]{geometry}
+\usepackage{mathtools}
+
+\begin{document}
+
+  \section{Thevenin's Theorem}
+
+Thevenin's Theorem: Any resistive network or circuit can be represented as a voltage source in series with a source resistance. This helps predict how the circuit will respond to a change in load.
+
+\subsection{Thevenin Voltage}
+The Thevenin Voltage $(V_{TH})$ of a circuit is the voltage present at the output terminal when the load is removed.
+\subsubsection{Example}
+
+  \begin{circuitikz} \draw
+  (0,0) node[ground]{}
+  (0,0) to [battery,l=12<\volt>] (0,8)
+  (0,8) to [resistor, l=20 <\ohm>] (4,8)
+  to [resistor, l=100 <\ohm>] (4,4)
+  to [resistor, l=360 <\ohm>] (4,0)
+  (4,4) node[circ]{}
+  (4,4) -- (8,4)
+  (8,4) node[ocirc]{}
+  to [american potentiometer] (8,0)
+  (8,0) node[circ]{}
+  (8,0) node[ground]{}
+  (4,0) node[ground]{}
+;
+  \end{circuitikz}
+
+  \begin{circuitikz} \draw
+  (0,0) node[ground]{}
+  (0,0) to [battery,l=12<\volt>] (0,8)
+  (0,8) to [resistor, l=20 <\ohm>] (4,8)
+  to [resistor, l=100 <\ohm>] (4,4)
+  to [resistor, l=360 <\ohm>] (4,0)
+  (4,4) node[circ]{}
+  (4,4) -- (8,4)
+  (8,4) node[ocirc]{}
+  (8,0) node[ocirc]{}
+  (8,0) node[ground]{}
+  (4,0) node[ground]{}
+;
+  \end{circuitikz}
+
+$$V_{TH}=V_S\frac{R_3}{R_T}=(12V)\frac{360\Omega}{480\Omega}=9V$$
+
+\subsubsection{Problem}
+Find the Thevenin Voltage $(V_{TH})$ of the circuit below:
+
+\begin{circuitikz} \draw
+(0,0) node[ground]{}
+(0,0) to [battery,l=3.3<\volt>] (0,8)
+(0,8) to [resistor, l=6 <\ohm>] (4,8)
+to [resistor, l=33 <\ohm>] (4,4)
+to [resistor, l=27 <\ohm>] (4,0)
+(4,4) node[circ]{}
+(4,4) -- (8,4)
+(8,4) node[ocirc]{}
+to [american potentiometer] (8,0)
+(8,0) node[ground]{}
+(4,0) node[ground]{}
+;
+
+\end{circuitikz}
+
+\subsection{Thevenin Resistance}
+THe Thevenin Resistance $(R_{TH})$ is the ressitance measured across the output terminals when the load is removed. To determine this circuit we will also note the voltage source will be replaced by a wire.
+\subsubsection{Example}
+
+
+
+\end{document}
