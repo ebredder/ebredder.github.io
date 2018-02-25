@@ -54,7 +54,8 @@
         <a href=#jan24>1.24.18</a><br>
         <a href=#jan31>1.31.18</a><br>
         <a href=#feb7>2.7.18</a><br>
-        <a href=#feb14>2.14.18</a></p>
+        <a href=#feb14>2.14.18</a><br>
+        <a href=#feb21>2.21.18</a></p>
       </div>
     </div>
   </div>
@@ -68,6 +69,9 @@
       <a href="https://1bitsquared.com/products/black-magic-probe" target="_blank">Black Magic Probe v 2.1</a> OR <a href="https://www.amazon.com/Electronics-Emulator-Simulator-Programmer-Programming/dp/B072J7QKDJ/ref=sr_1_1?s=electronics&ie=UTF8&qid=1515779651&sr=1-1&keywords=stlink+v2" target="_blank">STLINK V2</a><br>
   <em>Optional Board:</em><br>
 STM32 Nucleo Dev Board - F446RE <a href="https://www.mouser.com/productdetail/stmicroelectronics/nucleo-f446re?qs=sGAEpiMZZMvc81WFyF5EdsQmNbgZtBbGR8SlOiVkIXM%3D" target="_blank">(Mouser)</a> <a href="https://www.amazon.com/NUCLEO-F446RE-STM32F446RET6-supports-development-integrates/dp/B014IXUB1M/ref=pd_day0_147_4?_encoding=UTF8&pd_rd_i=B014IXUB1M&pd_rd_r=39WT8JX8K0D34ETK6SQ5&pd_rd_w=UklrP&pd_rd_wg=GQ4vx&psc=1&refRID=39WT8JX8K0D34ETK6SQ5" target="_blank">(Amazon)</a></p>
+<p>Class Resources:<br>
+  <i class="far fa-file-pdf"></i> <a href="https://mightyohm.com/files/soldercomic/FullSolderComic_EN.pdf" target="_blank">Soldering is Easy - MightyOhm</a><br>
+  <i class="fas fa-external-link-alt"></i> <a href="https://learn.adafruit.com/adafruit-guide-excellent-soldering/tools" target="_blank">Guide to Excellent Soldering - Adafruit</a></p>
       </div>
     </div>
   </div>
@@ -166,19 +170,38 @@ STM32 Nucleo Dev Board - F446RE <a href="https://www.mouser.com/productdetail/st
         </div>
 
 
-                  <div class="post-section" id="feb14">
-                    <div class="row">
-                      <div class="column">
-                        <h5>2.14.18</h5>
-                        <p>Today we are going to finish the small microcontroller build. We will attempt to install a bootloader on the <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf" target="_blank">Atmega328 Chip</a>, and run a program using a serial-USB device.</p>
-                        <p>Resources<br>
-                          <a href="https://learn.adafruit.com/standalone-avr-chip-programmer?embeds=allow" target="_blank">Stand-alome AVR Programmer - Adadfruit</a>
-                          <a href="https://learn.adafruit.com/arduino-tips-tricks-and-techniques/arduinoisp" target="-_blank">Using Arduino as ISP - Adafruit</a>
-                          <a href="Sp18ETR156/Adaboot328.zip" target="_blank">Adaboot Bootloader - HEX Files</a></p>
-                        </div>
-                      </div>
-                    </div>
+      <div class="post-section" id="feb14">
+        <div class="row">
+          <div class="column">
+            <h5>2.14.18</h5>
+            <p>Today we are going to finish the small microcontroller build. We will attempt to install a bootloader on the <a href="http://ww1.microchip.com/downloads/en/DeviceDoc/Atmel-42735-8-bit-AVR-Microcontroller-ATmega328-328P_Datasheet.pdf" target="_blank">Atmega328 Chip</a>, and run a program using a serial-USB device.</p>
+            <p>Resources:<br>
+              <a href="https://learn.adafruit.com/standalone-avr-chip-programmer?embeds=allow" target="_blank">Stand-alome AVR Programmer - Adadfruit</a>
+              <a href="https://learn.adafruit.com/arduino-tips-tricks-and-techniques/arduinoisp" target="-_blank">Using Arduino as ISP - Adafruit</a>
+              <a href="Sp18ETR156/Adaboot328.zip" target="_blank">Adaboot Bootloader - HEX Files</a></p>
+            </div>
+          </div>
+        </div>
 
+      <div class="post-section" id="feb21">
+        <div class="row">
+          <div class="column">
+            <h5>2.21.18</h5>
+            <p>Today you should work with your board and complete soldering the components on the protoboard. Before you finish soldering, make sure to test your board using an Arduino as In-Serial-Programmer (ISP).<br>
+            <i class="far fa-check-circle"></i> Complete soldered, working Atmega328 MCU.<br>
+            <i class="far fa-check-circle"></i> Test uploading the standard "Blink" sketch through the Arduino IDE.<br>
+            <i class="far fa-check-circle"></i> Write a program using 3 LEDs and build a stoplight. Make sure to include: 3 LEDs as Outputs, Inputs (PB, switch, potentiometer...)<br>
+            <i class="far fa-check-circle"></i> Create a logic diagram for your program<br>
+            <i class="far fa-check-circle"></i> Develop a schematic for the entire system</p>
+            <p>Make sure you spend time working through the next section of the MIT Courseware <a href="https://ocw.mit.edu/courses/electrical-engineering-and-computer-science/6-s096-effective-programming-in-c-and-c-january-iap-2014/" target="_blank">Effective Programming in C and C++. Use this time to go through the second set of examples, "Subtleties of C". If you need help with some of these please let me know. If you are looking to do some practice problems you can work through some of these excercies from w3resource</p>
+            <p>Resources:<br>
+            <i class="fas fa-external-link-alt"></i> <a href="https://www.w3resource.com/c-programming-exercises/" target="_blank">C Practice Excercises - w3 Resources</a><br>
+            <i class="fas fa-external-link-alt"></i> <a href="https://www.arduino.cc/en/Tutorial/ArduinoISP" target="_blank">ArduinoISP - Arduino.cc</a><br>
+            <i class="fas fa-external-link-alt"></i> <a href="https://www.pololu.com/docs/0J63/5.3" target="_blank">Programming AVRDUDE and avrgcc - Pololu</a><br>
+            <i class="fas fa-external-link-alt"></i> <a href="https://learn.sparkfun.com/tutorials/installing-an-arduino-bootloader" target="_blank">Installing Arduino Bootloader - Sparkfun</a></p>
+          </div>
+        </div>
+      </div>
 
   <div class="footer-section">
     <div class="row">
