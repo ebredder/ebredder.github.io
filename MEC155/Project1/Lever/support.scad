@@ -1,0 +1,11 @@
+$fn=30;
+difference(){
+hull(){
+circle(d=.5);
+translate([0,-.25])
+square(size=[8,.5]);
+}
+circle(d=.252);
+}
+polygon(points=[[6.2,.25],[7.8,.25],[7.8,2]]);
+polygon(points=[[6.2,-.25],[7.8,-.25],[7.8,-2]]);
