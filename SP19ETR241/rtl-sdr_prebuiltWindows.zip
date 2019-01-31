@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+<title>RelWithDebInfo.zip - rtl-sdr - Open Source Mobile Communications</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<meta name="description" content="Redmine" />
+<meta name="keywords" content="issue,bug,tracker" />
+<meta name="csrf-param" content="authenticity_token" />
+<meta name="csrf-token" content="6IXnDcd2knF/Tf9boifqWrcgMMDJk5sm8Bjnda7Oy+1UP7UhPWTUQlPeKBHaREQUHLmpmsAkpnejf4SmCkZ8sQ==" />
+<link rel='shortcut icon' href='/favicon.ico?1528612569' />
+<link rel="stylesheet" media="all" href="/stylesheets/jquery/jquery-ui-1.11.0.css?1528612569" />
+<link rel="stylesheet" media="all" href="/stylesheets/application.css?1528612569" />
+<link rel="stylesheet" media="all" href="/stylesheets/responsive.css?1528612569" />
+
+<script src="/javascripts/jquery-1.11.1-ui-1.11.0-ujs-3.1.4.js?1528612568"></script>
+<script src="/javascripts/application.js?1528612569"></script>
+<script src="/javascripts/responsive.js?1528612569"></script>
+<script>
+//<![CDATA[
+$(window).load(function(){ warnLeavingUnsaved('The current page contains unsaved text that will be lost if you leave this page.'); });
+//]]>
+</script>
+
+<link rel="stylesheet" media="screen" href="/plugin_assets/redmine_banner/stylesheets/banner.css?1548287890" /><script src="/plugin_assets/redmine_banner/javascripts/banner.js?1548287890"></script>   <link rel="stylesheet" media="all" href="/plugin_assets/clipboard_image_paste/stylesheets/jquery.Jcrop-0.9.12.min.css?1548287890" />
+<link rel="stylesheet" media="all" href="/plugin_assets/clipboard_image_paste/stylesheets/clipboard_image_paste.css?1548287890" />
+<script src="/plugin_assets/clipboard_image_paste/javascripts/jcrop-0.9.12-p1.min.js?1548287890"></script>
+<script src="/plugin_assets/clipboard_image_paste/javascripts/clipboard_image_paste.js?1548287890"></script>
+  <script type="text/javascript">
+    var j$cbp = $;
+  </script>
+  <link rel="stylesheet" media="screen" href="/plugin_assets/redmine_tags/stylesheets/jquery.tagit.css?1548287890" />
+<link rel="stylesheet" media="screen" href="/plugin_assets/redmine_tags/stylesheets/redmine_tags.css?1548287890" />
+<script src="/plugin_assets/redmine_tags/javascripts/tag-it.min.js?1548287890"></script> <script src="/plugin_assets/redmine_checklists/javascripts/checklists.js?1548287890"></script><link rel="stylesheet" media="screen" href="/plugin_assets/redmine_checklists/stylesheets/checklists.css?1548287890" /> <link rel="stylesheet" media="all" href="/plugin_assets/wiki_graphviz_plugin/stylesheets/wiki_graphviz.css?1548287890" />
+
+ <link rel="stylesheet" media="all" href="/plugin_assets/wiki_mscgen_plugin/stylesheets/wiki_mscgen.css?1548287890" />
+
+
+<!-- page specific tags -->
+    <link rel="stylesheet" media="screen" href="/stylesheets/scm.css?1528612569" /></head>
+<body class="project-rtl-sdr controller-attachments action-show">
+
+<div id="wrapper">
+
+<div class="flyout-menu js-flyout-menu">
+
+
+        <div class="flyout-menu__search">
+            <form action="/projects/rtl-sdr/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+            
+            <label class="search-magnifier search-magnifier--flyout" for="flyout-search">&#9906;</label>
+            <input type="text" name="q" id="flyout-search" class="small js-search-input" placeholder="Search" />
+</form>        </div>
+
+
+        <h3>Project</h3>
+        <span class="js-project-menu"></span>
+
+    <h3>General</h3>
+    <span class="js-general-menu"></span>
+
+    <span class="js-sidebar flyout-menu__sidebar"></span>
+
+    <h3>Profile</h3>
+    <span class="js-profile-menu"></span>
+
+</div>
+
+<div id="wrapper2">
+<div id="wrapper3">
+<div id="top-menu">
+    <div id="account">
+        <ul><li><a class="login" href="/login">Sign in</a></li><li><a class="register" href="/account/register">Register</a></li></ul>    </div>
+    
+    <ul><li><a class="home" href="/">Home</a></li><li><a class="projects" href="/projects">Projects</a></li><li><a class="News" href="/news">News</a></li><li><a class="Issues" href="/issues">Issues</a></li><li><a class="Activity" href="/activity">Activity</a></li><li><a class="help" href="https://www.redmine.org/guide">Help</a></li><li><a class="Planet" href="http://planet.osmocom.org">Planet</a></li><li><a class="Git repositories" href="http://git.osmocom.org">Git repositories</a></li><li><a class="Mailing lists" href="https://lists.osmocom.org">Mailing lists</a></li><li><a class="impressum" href="/projects/cellular-infrastructure/wiki/Contact">Impressum</a></li></ul></div>
+
+<div id="header">
+
+    <a href="#" class="mobile-toggle-button js-flyout-menu-toggle-button"></a>
+
+    <div id="quick-search">
+        <form action="/projects/rtl-sdr/search" accept-charset="UTF-8" method="get"><input name="utf8" type="hidden" value="&#x2713;" />
+        <input type="hidden" name="scope" />
+        
+        <label for='q'>
+          <a accesskey="4" href="/projects/rtl-sdr/search">Search</a>:
+        </label>
+        <input type="text" name="q" id="q" size="20" class="small" accesskey="f" />
+</form>        <div id="project-jump" class="drdn"><span class="drdn-trigger">rtl-sdr</span><div class="drdn-content"><div class="quick-search"><input type="text" name="q" id="projects-quick-search" value="" class="autocomplete" data-automcomplete-url="/projects/autocomplete.js?jump=wiki" autocomplete="off" /></div><div class="drdn-items projects selection"></div><div class="drdn-items all-projects selection"><a href="/projects?jump=wiki">All Projects</a></div></div></div>
+    </div>
+
+    <h1><span class="breadcrumbs"><a class="root" href="/projects/sdr?jump=wiki">SDR (Software Defined Radio)</a><span class="separator"> &raquo; </span></span><span class="current-project">rtl-sdr</span></h1>
+
+    <div id="main-menu" class="tabs">
+        <ul><li><a class="overview" href="/projects/rtl-sdr">Overview</a></li><li><a class="activity" href="/projects/rtl-sdr/activity">Activity</a></li><li><a class="roadmap" href="/projects/rtl-sdr/roadmap">Roadmap</a></li><li><a class="issues" href="/projects/rtl-sdr/issues">Issues</a></li><li><a class="news" href="/projects/rtl-sdr/news">News</a></li><li><a class="wiki selected" href="/projects/rtl-sdr/wiki">Wiki</a></li><li><a class="repository" href="/projects/rtl-sdr/repository">Repository</a></li></ul>
+        <div class="tabs-buttons" style="display:none;">
+            <button class="tab-left" onclick="moveTabLeft(this); return false;"></button>
+            <button class="tab-right" onclick="moveTabRight(this); return false;"></button>
+        </div>
+    </div>
+</div>
+
+<div id="main" class="nosidebar">
+    <div id="sidebar">
+        
+        
+    </div>
+
+    <div id="content">
+        
+        <div class="contextual">
+  <a class="icon icon-download" href="/attachments/download/2242/RelWithDebInfo.zip">Download (416 KB)</a></div>
+
+<h2>RelWithDebInfo.zip</h2>
+
+<div class="attachments">
+<p>- - 
+   <span class="author"><a class="user active" href="/users/52">Hoernchen</a>, 01/24/2014 04:33 PM</span></p>
+</div>
+
+  <p class="nodata">
+    No preview available. <a class="icon icon-download" href="/attachments/download/2242/RelWithDebInfo.zip">Download</a> the file instead.
+</p>
+
+
+
+
+
+         
+        <div style="clear:both;"></div>
+    </div>
+</div>
+</div>
+
+<div id="ajax-indicator" style="display:none;"><span>Loading...</span></div>
+<div id="ajax-modal" style="display:none;"></div>
+
+<div id="footer">
+  <div class="bgl"><div class="bgr">
+    Powered by <a href="https://www.redmine.org/">Redmine</a> &copy; 2006-2018 Jean-Philippe Lang
+  </div></div>
+</div>
+</div>
+</div>
+  
+<span id="cbp_images_form">
+  <span id="cbp_image_fields"></span>
+  <span class="add_attachment"><a href="#" onclick="cbImagePaste.showPasteDialog(); return false;; return false;" class="add_attachment">Add picture from clipboard</a>
+  (Maximum size: 48.8 MB)</span>
+</span>
+
+<!-- input field span inspired by redmine/app/views/attachments/_form.html.erb -->
+<span id="cbp_image_field" style="display:none">
+  <span id="cbp_attach_thumbnail_box">
+    <img id="cbp_attach_thumbnail"/>
+  </span>
+  <input type="hidden" name="attachments[nnnnn][data]" id="cbp_image_data" value="" />
+  <input type="text" name="attachments[nnnnn][name]" value="" class="name" maxlength="50" />
+  <a title="Copy image and thumbnail link" id="cbp_link_btn" href="#"><img src="/images/link.png?1528612567" alt="Link" /></a>
+  <input type="text" name="attachments[nnnnn][description]" value="" class="description" maxlength="255" placeholder="Optional description" />
+  <a href="#" onclick="cbImagePaste.removeImageField(this); return false;" title="Delete"><img src="/images/delete.png?1528612567" alt="Delete" /></a>
+</span>
+
+<!-- clipboard paste dialog -->
+<div id="cbp_paste_dlg" title="Add picture from clipboard" style="display:none">
+  <script type="text/javascript">
+    // translated labels go here (inside namespace)
+    (function(cbImagePaste, $, undefined) {
+      cbImagePaste.cbp_txt_crop_box        = "crop box:  x={1}  y={2}  width={3}  height={4}";
+      cbImagePaste.cbp_txt_print           = "Use PrintScreen key and then Ctrl+V.";
+      cbImagePaste.cbp_txt_select          = "Use mouse to select specific part of the image.";
+      cbImagePaste.cbp_txt_deselect        = "Click outside selection to deselect.";
+      cbImagePaste.cbp_txt_empty_cb        = "The clipboard is empty. Try PrintScreen key again.";
+      cbImagePaste.cbp_txt_no_image_cb     = "No image found in the clipboard. Try PrintScreen key again.";
+      cbImagePaste.cbp_txt_no_image_pst    = "No image has been pasted yet. Insert some first.";
+      cbImagePaste.cbp_txt_too_many_files  = "Cannot add another attachment. Number of file attachments allowed for one update is limited to 10.";
+      cbImagePaste.cbp_txt_wrong_browser   = "Your current browser cannot paste pictures. Please use Mozilla Firefox ver. >= 5, Google Chrome ver. >= 13 or Internet Explorer ver. >= 11.";
+      cbImagePaste.cbp_txt_btn_ok          = "Ok";
+      cbImagePaste.cbp_txt_btn_cancel      = "Cancel";
+      cbImagePaste.cbp_txt_too_big_image   = "This file cannot be uploaded because it exceeds the maximum allowed file size (48.8 MB)";
+      cbImagePaste.cbp_max_attach_size     = 51200000;
+      cbImagePaste.cbp_max_attachments     = 10;
+      cbImagePaste.cbp_min_chrome_ver      = 535;
+      cbImagePaste.cbp_min_firefox_ver     = 5;
+      cbImagePaste.cbp_min_ie_ver          = 11;
+      cbImagePaste.cbp_act_update_id       = 636;
+    }(window.cbImagePaste = window.cbImagePaste || {}, j$cbp));
+  </script>
+
+  <div id="cbp_header_box">
+    <!-- canvas id="cbp_thumbnail" width="60" height="60"></canvas -->
+    <div id="cbp_instructions">&nbsp;</div>
+  </div>
+  <div id="cbp_panel_box">
+    <!-- place for pasted image editor -->
+  </div>
+</div>
+
+<!-- dialog to copy image link for wiki -->
+<div id="cbp_link_dlg" title="Copy image and thumbnail link" style="display:none">
+  <input type="text" id="cbp_image_link" readonly />
+  <p></p>
+  <input type="text" id="cbp_thumbnail_link" readonly />
+</div>
+ 
+</body>
+</html>
