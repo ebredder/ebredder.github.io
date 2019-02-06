@@ -116,7 +116,7 @@
              <div class="row">
               <div class="column">
                 <h6 class="docs-header">Week 1 - Welcome!</h6>
-                <p>Welcome to ETR241! I will be posting content and labs each Thursday and following with solutions and updates each Tuesday. This post serves as an introduction to the course, syllabus, and the structure. Feel free to reach out if you need anything. Make sure to have all the class materials by the end of the week!</p>
+                <p>Welcome to ETR241! I will be posting content and labs each Friday and following with solutions and updates each Wednesday. This post serves as an introduction to the course, syllabus, and the structure. Feel free to reach out if you need anything. Make sure to have all the class materials by the end of the week!</p>
                 <p><strong>Getting Started:</strong><br>
                   <i class="far fa-check-square"></i> Please make sure you post on the <a href="https://groups.google.com/forum/#!forum/sp19etr241" target="_blank">discussion board</a>. If you do not have access through your PVCC Student Account, let me know ASAP.<br>
                   <i class="far fa-check-square"></i> Watch the <a href="https://youtu.be/LcyQLbDRqTw" target="_blank">introduction video</a> and read the <a href="SP19ETR241/SP19ETR241Syllabus.pdf" target="_blank">syllabus</a>.<br>
@@ -186,14 +186,34 @@
                     Please make sure that you submitted your <a href="https://goo.gl/forms/V5mS77DJoSVR7KJJ2" target="_blank">assignment</a> in the provided form. You should have had success with the AM and FM in the area as well as using the command line tools to capture data. <a href="https://youtu.be/SsHr4SeyLMs" target="_blank">This video</a> should help get you setup if you ran into any trouble and don't forget to use the <a href="https://groups.google.com/forum/#!topic/sp19etr241/G6cTuUMMSHQ" target="_blank">discussion</a> if you need it!<br>
                   </p>
                   <p><strong>Getting Started:</strong><br>
-
+                    Please make sure you are caught up with the current readings and videos for the week! Read Chapter 1 of <a href="https://www.ece.ucsb.edu/wcsl/Publications/intro_comm_systems_madhow_jan2014b.pdf" target="_blank">Introduction to Communication Systems</a> by Madhow. Check supplemental videos...<br>
                   </p>
                   <p><strong>Supplemental Materials:</strong><br>
+                    <i class="fas fa-book-open"></i><a href="https://www.ece.ucsb.edu/wcsl/Publications/intro_comm_systems_madhow_jan2014b.pdf" target="_blank">Introduction to Communication Systems - Upamanyu Madhow</a><br>
                     <i class="fab fa-youtube"></i> <a href="https://youtu.be/SsHr4SeyLMs" target="_blank">03 - Local Radio & Command Line Details</a><br>
                     <i class="far fa-file-archive"></i> <a href="SP19ETR241/rtl-sdr_prebuiltWindows.zip" target="_blank">RTL-SDR Tools - Prebuilt Windows - .zip</a><br>
                     <i class="fab fa-ubuntu"></i> Ubuntu-based systems: <code>sudo apt install rtl-sdr librtlsdr-dev libusb-1.0-0-dev</code><br>
                     <i class="fab fa-apple"></i> Mac OSX Systems: Install <a href="http://www.macports.org/" target="_blank">macports</a>, Xcode, Xcode command line tools,then in terminal <code>sudo port install rtl-sdr</code><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://www.gnu.org/software/octave/" target="_blank">GNU Octave</a>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://octave.org/doc/v4.4.1/" target="_blank">GNU Octave Documentation</a><br>
+                    <i class="far fa-file-code"></i><a href="SP19ETR241/loadFile.m" target="_blank">loadFile.m</a><br>
+                    <i class="far fa-file-code"></i><a href="SP19ETR241/msg.m" target="_blank">msg.m</a><br>
+                    <i class="far fa-file-archive"></i> <a href="SP19ETR241/Week3/octaveRTLSDRscreenshots.zip" target="_blank">Lab Screenshots - .zip</a><br>
                   </p>
+                  <p><strong>Lab: SDR Signal Plotting</strong><br>
+                    <i class="far fa-check-square"></i> Find your sample rate and gain values using the <code>rtl_test -p</code> command.<br>
+                    <i class="far fa-check-square"></i> Collect sample data using <code>rtl_sdr</code> setting a center frequency, gain (choose from your previous test), sample rate, and save the file as a <em>.dat</em> file.<br>
+                    <i class="far fa-check-square"></i> Install <a href="https://www.gnu.org/software/octave/" target="_blank">GNU Octave</a> to plot and manipulate your data.<br>
+                    <i class="far fa-check-square"></i> Use the <em>loadFile.m</em> provided to load the data you just saved from your SDR as a vector. The <em>msg.m</em> will create a spectrogram of your data<br>
+                    <i class="far fa-check-square"></i> Start with <code>d = loadFile('YOURSAMPLE.dat')</code> then use <code>msg(d,1,1024,2000);</code> to display your data.<br>
+                    <i class="far fa-check-square"></i> <code>ds = msg(d,1,1024,2000);</code> will assign the output to a variable<br>
+                    <i class="far fa-check-square"></i> <code>plot(abs(ds(:,1000)));</code> will plot the spectrum at a time of .5 sec of column 1000<br>
+                    <i class="far fa-check-square"></i> <code>plot(abs(ds(313,:)));</code> would show a strong plot at 313...<br>
+                    <i class="far fa-check-square"></i> <code>dd = msg(d,1,256,80000);</code> would sample at 8kHz in blocks that are 256 samples<br>
+                    <i class="far fa-check-square"></i> As a bonus, see if you can find your sample and play it back through your sound card based...<br>
+                    <i class="far fa-check-square"></i> <a href="https://groups.google.com/forum/#!topic/sp19etr241/LDI_runhW4s" target="_blank">Week 3 Discussion!</a><br>
+                  </p>
+                  <p><i class="fab fa-google-drive"></i> <a href="https://goo.gl/forms/c79jY9V28IIOQMSC2" target="_blank"><strong>Assignment Submission</strong></a></p>
                 </div>
               </div>
             </div>
