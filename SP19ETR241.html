@@ -169,7 +169,7 @@
                   </p>
                   <p><strong>Lab: Intro to SDR</strong><br>
                     <i class="far fa-check-square"></i> Using your SDR, find the range of AM and FM Bands that you can reach with our antenna. Use the provided <a href="https://youtu.be/PBvvwTIps-k" target="_blank">video</a> to guide you around CubicSDR.<br>
-                    <i class="far fa-check-square"></i> Use radio reference to find a local amatuer station, police/fire/hospital, or if you are close to the airport try them! I was able to pull some <a href="https://youtu.be/2FGfyqW-98E" target="_blank">AM Ground Control</a> signals poorly.<br>
+                    <i class="far fa-check-square"></i> Use radio reference to find a local amateur station, police/fire/hospital, or if you are close to the airport try them! I was able to pull some <a href="https://youtu.be/2FGfyqW-98E" target="_blank">AM Ground Control</a> signals poorly.<br>
                     <i class="far fa-check-square"></i> Try using the rtl_sdr command line tool to sample data. We will be using this next week. If you have the R820T tuner, don't use the <code>-t</code> modifier<br>
                     <i class="far fa-check-square"></i> Find the datasheets for the RTL2832U and R820T Tuner (or the ones in your particular SDR)<br>
                     <i class="far fa-check-square"></i> Don't forget to use the <a href="https://groups.google.com/forum/#!topic/sp19etr241/G6cTuUMMSHQ" target="_blank">discussion</a> if you need it!<br>
@@ -227,7 +227,7 @@
              <div class="container">
                <div class="row">
                 <div class="column">
-                  <h6 class="docs-header">Week 4 - Signals & Antennas</h6>
+                  <h6 class="docs-header">Week 4 - Signals</h6>
                   <p><strong>Week 3 Lab:</strong><br>
                     Please make sure that you submitted your <a href="https://goo.gl/forms/c79jY9V28IIOQMSC2" target="_blank">assignment</a> in the provided form. Make sure you captured your own data and created a unique plot in GNU Octave. Don't forget to use the <a href="https://groups.google.com/forum/#!topic/sp19etr241/LDI_runhW4s" target="_blank">discussion</a> if you need it! Here is a step by step <a href="https://youtu.be/dB98ryVGy3o" target="_blank">video</a> of the lab.<br>
                   </p>
@@ -242,10 +242,10 @@
                   <i class="far fa-file-code"></i> <a href="SP19ETR241/ffreq.m" target="_blank">ffreq.m</a><br>
                 </p>
                 <p><strong>Lab: Narrow Band Scanner</strong><br>
-                  <i class="far fa-check-square"></i> Use the amatuer raio repeater near your area to find a signal, capture the Narrow Band frequency. Albemarle is listed <a href="https://www.albemarleradio.org/repeaters/" target="_blank">here</a>.<br>
+                  <i class="far fa-check-square"></i> Use the amateur raio repeater near your area to find a signal, capture the Narrow Band frequency. Albemarle is listed <a href="https://www.albemarleradio.org/repeaters/" target="_blank">here</a>.<br>
                   <i class="far fa-check-square"></i> Autmatically find signals in your captured data using the <em>ffreq.m</em> program in GNU Octave.<br>
                   <i class="far fa-check-square"></i> This should automatically compute the spectrogram from the previous lab for every .1 second, finds which frequencies have a signal over the <a href="https://en.wikipedia.org/wiki/Squelch" target="_blank">squelch</a> threshold of 10% of the peak, then returns frequency offsets!<br>
-                  <i class="far fa-check-square"></i> Use the command <code>f = ffreq(d)</code> where f is your output and d is the dataset you loaded with <em>loadFile.m</em> from the amatuer radio station.<br>
+                  <i class="far fa-check-square"></i> Use the command <code>f = ffreq(d)</code> where f is your output and d is the dataset you loaded with <em>loadFile.m</em> from the amateur radio station.<br>
                   <i class="far fa-check-square"></i> The results are all Hz frequencies. We need to <a href="https://www.mwrf.com/systems/basics-modulation-and-demodulation" target="_blank">demodulate</a> and create a <a href="https://hackaday.com/2018/08/17/getting-an-rf-low-pass-filter-right/" target="_blank">low pass filter</a>.<br>
                   <i class="far fa-check-square"></i> We can demodulate the data using a few parameters in the <em>ffreq.m</em> program. In GNU Octave you can set these, for example:<br>
                   <code>fs = 2048000</code> would be the sampling frequency<br>
@@ -256,6 +256,9 @@
                   <i class="far fa-check-square"></i> <code>dmd = decimate(dm,8,'fir');</code> will decimate one time, <code>dmdd = decimate(dmd,8,'fir');</code> will be our second...<br>
                   <i class="far fa-check-square"></i> <code>msg(dmdd, 1, 256,1024)</code> to plot this data. Try using the FIR and the IIR filters...<br>
                   <i class="far fa-check-square"></i> <code>sound(abs(dmdd), 32000);</code> to playback your signal, and try to plot your data as well like in the previous lab...<br>
+                  <i class="far fa-check-square"></i> <a href="https://groups.google.com/forum/#!topic/sp19etr241/kwEy0zo7GrY" target="_blank">Week 4 Discussion!</a><br>
+                </p>
+                <p><i class="fab fa-google-drive"></i> <a href="https://goo.gl/forms/0DKRUFlBmVdaFHLA3" target="_blank"><strong>Assignment Submission</strong></a></p>
                 </div>
               </div>
             </div>
