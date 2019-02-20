@@ -231,8 +231,31 @@
                   <p><strong>Week 3 Lab:</strong><br>
                     Please make sure that you submitted your <a href="https://goo.gl/forms/c79jY9V28IIOQMSC2" target="_blank">assignment</a> in the provided form. Make sure you captured your own data and created a unique plot in GNU Octave. Don't forget to use the <a href="https://groups.google.com/forum/#!topic/sp19etr241/LDI_runhW4s" target="_blank">discussion</a> if you need it! Here is a step by step <a href="https://youtu.be/dB98ryVGy3o" target="_blank">video</a> of the lab.<br>
                   </p>
+                  <p><strong>Getting Started:</strong><br>
+                    Read the 3 articles below to gain a basic understanding of modulation, demodulation and RF filters...<br>
+                  </p>
                   <p><strong>Supplemental Materials:</strong><br>
                   <i class="fab fa-youtube"></i> <a href="https://youtu.be/dB98ryVGy3o" target="_blank">04 - Command Line SDR & GNU Octave</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://www.mwrf.com/systems/basics-modulation-and-demodulation" target="_blank"> Basics of Modulation & Demodulation - J. Browne</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://nuwaves.com/rf-filters-common-applications/" target="_blank">Applications of RF Filters - nuWave Engineering</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://hackaday.com/2018/08/17/getting-an-rf-low-pass-filter-right/" target="_blank">Getting an RF Low Pass Filter Right - Jenny List</a><br>
+                  <i class="far fa-file-code"></i> <a href="SP19ETR241/ffreq.m" target="_blank">ffreq.m</a><br>
+                </p>
+                <p><strong>Lab: Narrow Band Scanner</strong><br>
+                  <i class="far fa-check-square"></i> Use the amatuer raio repeater near your area to find a signal, capture the Narrow Band frequency. Albemarle is listed <a href="https://www.albemarleradio.org/repeaters/" target="_blank">here</a>.<br>
+                  <i class="far fa-check-square"></i> Autmatically find signals in your captured data using the <em>ffreq.m</em> program in GNU Octave.<br>
+                  <i class="far fa-check-square"></i> This should automatically compute the spectrogram from the previous lab for every .1 second, finds which frequencies have a signal over the <a href="https://en.wikipedia.org/wiki/Squelch" target="_blank">squelch</a> threshold of 10% of the peak, then returns frequency offsets!<br>
+                  <i class="far fa-check-square"></i> Use the command <code>f = ffreq(d)</code> where f is your output and d is the dataset you loaded with <em>loadFile.m</em> from the amatuer radio station.<br>
+                  <i class="far fa-check-square"></i> The results are all Hz frequencies. We need to <a href="https://www.mwrf.com/systems/basics-modulation-and-demodulation" target="_blank">demodulate</a> and create a <a href="https://hackaday.com/2018/08/17/getting-an-rf-low-pass-filter-right/" target="_blank">low pass filter</a>.<br>
+                  <i class="far fa-check-square"></i> We can demodulate the data using a few parameters in the <em>ffreq.m</em> program. In GNU Octave you can set these, for example:<br>
+                  <code>fs = 2048000</code> would be the sampling frequency<br>
+                  <code>dt = 1/fs</code> would be the sampling time<br>
+                  <code>t = [1:length(d)]*dt;</code> would be the time of each sample of d<br>
+                  <code>dm = d.*exp(-i*2*pi*(-396000)*t);</code> is the demodulated data of <strong>d</strong>, the data loaded<br>
+                  <i class="far fa-check-square"></i> Now we can decimate the <strong>dm</strong> by 64 to bring our sample from 2.048 MHz to 16 kHz. Do this by a factor of 8 two times for efficiency.<br>
+                  <i class="far fa-check-square"></i> <code>dmd = decimate(dm,8,'fir');</code> will decimate one time, <code>dmdd = decimate(dmd,8,'fir');</code> will be our second...<br>
+                  <i class="far fa-check-square"></i> <code>msg(dmdd, 1, 256,1024)</code> to plot this data. Try using the FIR and the IIR filters...<br>
+                  <i class="far fa-check-square"></i> <code>sound(abs(dmdd), 32000);</code> to playback your signal, and try to plot your data as well like in the previous lab...<br>
                 </div>
               </div>
             </div>
