@@ -321,16 +321,20 @@
                     <i class="fab fa-youtube"></i> <a href="https://youtu.be/TEsjWPs93yY" target="_blank">Setting up your SparkFun ProRF Dev Board</a><br>
                     <i class="fas fa-external-link-alt"></i> <a href="https://learn.adafruit.com/adafruit-am2320-temperature-humidity-i2c-sensor/overview" target="_blank">AM2320 Temperature/Humidity Sensor Overview - Adafruit</a><br>
                     <i class="far fa-file-pdf"></i> <a href="SP19ETR241/Week6/AM2320.pdf" target="_blank">AM2320 Datasheet</a><br>
-
                   </p>
                   <p><strong>Lab: Decoding Nodes</strong><br>
                     The goal of this lab is to setup your decode the SparkFun Pro RF LoRa signal using the SDR. You will be required to change some of the messages and make sure that the signals and the messages you send match.<br>
                     <i class="far fa-check-square"></i> You need to add the <a href="https://github.com/adafruit/Adafruit_Sensor" target="_blank">Adafruit Sensor Library</a> and the <a href="https://github.com/adafruit/Adafruit_AM2320" target="_blank">AM2320 Temperature/Humidity Sensor Library</a> as well to your Arduino IDE. Place the <a href="SP19ETR241/Week6/loRaProRF-ClientAM2320/dtostrf.h" target="_blank">dtostrf.h</a> file in the same folder as your sketch (.ino) file.<br>
                     <i class="far fa-check-square"></i> We will be combining the previous sketch and the basic temperature sketch example. Find this new sketch in <em>File -> Examples -> Adafruit_AM2320_basictest</em>.
-                    <i class="far fa-check-square"></i> Using the breadboard, make sure to wire your circuit appropriately. You will need the AM2320 Sensor, 2x 10K Ohm Resistors, a few jumper wires, and your SparkFun ProRF Microcontroller Board. Use the <a href="#" target="_blank">schematic</a> to help guide your wiring!<br>
-
-
+                    <i class="far fa-check-square"></i> Using the breadboard, make sure to wire your circuit appropriately. You will need the AM2320 Sensor, 2x 10K Ohm Resistors, a few jumper wires, and your SparkFun ProRF Microcontroller Board. Use the <a href="SP19ETR241/Week6/AM2320-SparkfunProRF_schem.png" target="_blank">schematic</a> to help guide your wiring!<br>
+                    <i class="far fa-check-square"></i> If you have trouble combining th inital portions of the sketch, then use this for reference. The normal SDA/SCL (i2c) Pins on this board are used for the black connector on the rear of the board. We will redefine these pins in the updated code. Use <a href="SP19ETR241/Week6/loRaProRF-ClientAM2320/loRaProRF-ClientAM2320.ino" target="_blank">this sketch .ino file</a> to get started and don't forget to include the <a href="SP19ETR241/Week6/loRaProRF-ClientAM2320/dtostrf.h" target="_blank">dtostrf.h</a> file in the same folder as your sketch when compiling! You will also need the RadioHead Library from the previous class. Here is a <a href="#" target="_blank">video</a> going over the basic format of the firmware.<br>
+                    <i class="far fa-check-square"></i> Use the magniifier icon in the top right of the Arduino IDE to open up the Serial Port. This should display the temperature readings and any strings you put into your initial firmware.<br>
+                    <i class="far fa-check-square"></i> On another computer, or with your ProRF board plugged into another power source, open CubicSDR and find your LoRa signal.<br>
+                    <i class="far fa-check-square"></i> Make sure to record the audio of the signal through CubicSDR as a wave file. We are going to use this coming up...<br>
+                    <i class="far fa-check-square"></i> Begin your strategy for decoding and analyzing the signal as it is coming in. Compare this to what you are getting from the Serial Port data being streamed from the device.<br>
+                    <i class="far fa-check-square"></i> <a href="https://groups.google.com/forum/#!topic/sp19etr241/oHXON56Pf4g" target="_blank">Week 6 Discussion!</a><br>
                   </p>
+                  <p><i class="fab fa-google-drive"></i> <a href="#" target"_blank"><strong>Assignment Submission</strong></a><br></p>
                 </div>
               </div>
             </div>
