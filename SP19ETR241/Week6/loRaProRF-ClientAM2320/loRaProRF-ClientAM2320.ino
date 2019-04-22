@@ -61,7 +61,7 @@ void setup()
     digitalWrite(LED, LOW);
     delay(500);
     
-    Serial.println("Adafruit AM2320 Basic Test");
+    SerialUSB.println("Adafruit AM2320 Basic Test");
     am2320.begin();
   }
 
@@ -91,7 +91,7 @@ void loop()
 
   datastring += dtostrf(c, 4, 2, databuf);
   strcpy((char *)dataoutgoing,databuf);
-  Serial.println(databuf);
+  SerialUSB.println(databuf);
   rf95.send(dataoutgoing, sizeof(dataoutgoing));
   rf95.waitPacketSent();
   delay(400);
@@ -102,7 +102,7 @@ void loop()
 
   datastring += dtostrf(f, 4, 2, databuf);
   strcpy((char *)dataoutgoing,databuf);
-  Serial.println(databuf);
+  SerialUSB.println(databuf);
   rf95.send(dataoutgoing, sizeof(dataoutgoing));
   rf95.waitPacketSent();
   delay(400);
@@ -113,7 +113,7 @@ void loop()
 
   datastring += dtostrf(h, 4, 2, databuf);
   strcpy((char *)dataoutgoing,databuf);
-  Serial.println(databuf);
+  SerialUSB.println(databuf);
   rf95.send(dataoutgoing, sizeof(dataoutgoing));
   rf95.waitPacketSent();
   delay(400);
