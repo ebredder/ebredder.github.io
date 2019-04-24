@@ -1,6 +1,5 @@
 #include <SPI.h>
-//#include <Wire.h>
-#include "wiring_private.h" // pinPeripheral() function
+#include <Wire.h>
 
 //Radio Head Library:
 #include <RH_RF95.h> 
@@ -11,9 +10,6 @@
 
 //Convert float variables
 #include "dtostrf.h"
-
-//Redefine SDA(D4) and SCL(D3) Pins for i2c
-TwoWire myWire(&sercom2, 4, 3);
 
 // We need to provide the RFM95 module's chip select and interrupt pins to the
 // rf95 instance below. On the SparkFun ProRF those pins are 12 and 6 respectively.
@@ -36,10 +32,6 @@ uint8_t dataoutgoing[10];
 void setup()
 {
   pinMode(LED, OUTPUT);
-  
-  myWire.begin();
-  pinPeripheral(4, PIO_SERCOM_ALT); //SDA
-  pinPeripheral(3, PIO_SERCOM_ALT); //SCL
 
   SerialUSB.begin(9600);
   // It may be difficult to read serial messages on startup. The following line
