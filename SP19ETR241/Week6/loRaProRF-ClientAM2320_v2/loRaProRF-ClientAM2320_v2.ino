@@ -53,7 +53,7 @@ void setup()
     digitalWrite(LED, LOW);
     delay(500);
     
-    SerialUSB.println("Adafruit AM2320 Basic Test");
+    SerialUSB.println("AM2320 up!");
     am2320.begin();
   }
 
@@ -86,7 +86,7 @@ void loop()
   SerialUSB.println(databuf);
   rf95.send(dataoutgoing, sizeof(dataoutgoing));
   rf95.waitPacketSent();
-  delay(400);
+  delay(500);
 
   uint8_t toSend1[] = "Temperature F";
   rf95.send(toSend1, sizeof(toSend1));
@@ -97,7 +97,7 @@ void loop()
   SerialUSB.println(databuf);
   rf95.send(dataoutgoing, sizeof(dataoutgoing));
   rf95.waitPacketSent();
-  delay(400);
+  delay(500);
 
   uint8_t toSend2[] = "Humidity";
   rf95.send(toSend2, sizeof(toSend2));
@@ -108,7 +108,7 @@ void loop()
   SerialUSB.println(databuf);
   rf95.send(dataoutgoing, sizeof(dataoutgoing));
   rf95.waitPacketSent();
-  delay(400);
-
   delay(500);
+
+  delay(2000);
 }
