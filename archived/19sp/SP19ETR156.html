@@ -1,0 +1,345 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Eric Bredder-ETR156</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <script src="js/site.js"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.6.3/js/all.js" integrity="sha384-EIHISlAOj4zgYieurP0SdoiBYfGJKkgWedPHH4jCzpCXLmzVsw1ouK59MuUtP4a1" crossorigin="anonymous"></script>
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div id="top" class="column" align="center" style="margin-top: 15%">
+        <h2>ETR156 - Digital Circuits and Microprocessor Fundamentals</h2>
+      </div>
+    </div>
+      <div class="row">
+        <div class="column" align="left">
+        <p><a href="http://www.pvcc.edu/" target="_blank">Piedmont Virginia Community College</a><br>
+          Spring 2019 | Wednesday: 3:30 - 6:00 PM<br>
+        <a href="SP19ETR156/SP19ETR156Syllabus.pdf" target="_blank">Syllabus</a><br>
+        <a href="Docs/ETRDocumentationv2.pdf" target="_blank">Documentation Guidelines</a><br>
+        <a href="Docs/Spring19-LabHours.pdf" target="_blank">Spring 2019 Open Lab Hours</a><br>
+        <a href="https://goo.gl/forms/THGFva1M2cUlbHdd2" target="_blank">Anonymous Feedback Form</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-spacer"></div>
+  <nav class="navbar">
+     <div class="container">
+       <ul class="navbar-list">
+         <li class="navbar-item"><a class="navbar-link" href="http://ebredder.org">Home</a></li>
+         <li class="navbar-item">
+           <a class="navbar-link" href="#class" data-popover="#classPopover">Classes</a>
+           <div id="classPopover" class="popover">
+             <ul class="popover-list">
+                <li class="popover-item">
+                 <a class="popover-link" href="#introduction">Introduction</a>
+               </li>
+               <li class="popover-item">
+                <a class="popover-link" href="#116">1.16</a>
+              </li>
+              <li class="popover-item">
+               <a class="popover-link" href="#123">1.23</a>
+             </li>
+             <li class="popover-item">
+              <a class="popover-link" href="#130">1.30</a>
+            </li>
+            <li class="popover-item">
+             <a class="popover-link" href="#206">2.06</a>
+           </li>
+           <li class="popover-item">
+            <a class="popover-link" href="#213">2.13</a>
+          </li>
+          <li class="popover-item">
+           <a class="popover-link" href="#220">2.20</a>
+         </li>
+         <li class="popover-item">
+          <a class="popover-link" href="#227">2.27</a>
+        </li>
+        <li class="popover-item">
+         <a class="popover-link" href="#306">3.06</a>
+       </li>
+           </div>
+         </li>
+         <li class="navbar-item"><a class="navbar-link" href="https://www.youtube.com/playlist?list=PLJcB3ij-FnytPCr1Ga0lv7nE23PFwTU08" target="_blank">Videos</a></li>
+         <li class="navbar-item"><a class="navbar-link" href="#top">Top</a></li>
+       </ul>
+     </div>
+   </nav>
+
+         <div class="docs-section" id="intro">
+            <div class="container">
+              <div class="row">
+               <div class="column">
+                 <h6 class="docs-header">Introduction</h6>
+
+               <p><strong>ETR156 - Digital Circuits and Microprocessor Fundamentals:</strong>
+                 <br>Introduces characteristics and applications of digital logic elements including gates, counters, registers, displays and pulse generators. Applies microprocessor theory and applications, including internal architecture of the micro- processor, interfacing, input/output, and memory.</p>
+                 <p>Required Materials:<br>
+                  <i class="fas fa-wrench"></i>  <a href="https://www.segger.com/products/debug-probes/j-link/models/j-link-edu-mini/" target="_blank">SEGGER J-Link EDU Mini - JTAG/SWD Debugger</a><br>
+                  <i class="fas fa-wrench"></i>  <a href="https://www.adafruit.com/product/3857" target="_blank">Adafruit Feather M4 Express Microcontroller Board</a><br>
+                  <i class="fas fa-wrench"></i>  <a href="https://www.adafruit.com/product/3898" target="_blank">Adafruit Lithium Ion Polymer Battery Ideal For Feathers - 3.7V 400mAh</a><br>
+                  Software:<br>
+                  <i class="fas fa-compact-disc"></i> <a href="http://www.cburch.com/logisim/download.html" target="_blank">Logisim</a><br>
+                  <i class="fas fa-compact-disc"></i> <a href="https://www.autodesk.com/products/eagle/free-download" target="_blank">Autodesk Eagle CAD</a><br>
+                  <i class="fas fa-compact-disc"></i> <a href="https://www.segger.com/products/debug-probes/j-link/tools/j-link-commander/" target="_blank">J-Link Commander</a><br>
+                  <i class="fas fa-compact-disc"></i> <a href="https://www.arduino.cc/en/main/software" target="_blank">Arduino IDE</a><br>
+                  <i class="fas fa-compact-disc"></i> <a href="https://github.com/adafruit/Adafruit_Adalink" target="_blank">Adafruit Adalink Flash Tool</a><br>
+                  <i class="fas fa-compact-disc"></i> <a href="https://github.com/adafruit/circuitpython" target="_blank">CircuitPython</a><br>
+                  Resources:<br>
+                  <i class="fab fa-youtube"></i> <a href="https://www.youtube.com/playlist?list=PLJcB3ij-FnytPCr1Ga0lv7nE23PFwTU08" target="_blank">Course Video YouTube Playlist</a></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="116">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">1.16- Welcome!</h6>
+                <p>Class will meet each Wednesday at 3:30 - 6:00 in the Butler Building. We will be using the lab space as our own educational facility. Please help build this community space and respect the tools and materials! We will review the syllabus and lay the groundwork for the semester.</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Use a pull-down resistor as our switch and input for the logic gate<br>
+                  <i class="far fa-check-square"></i> Find the 7408 datasheet to locate the pinout of the IC<br>
+                  <i class="far fa-check-square"></i> Build a simple AND-Gate using two inputs and an LED as the output using 5V as the power<br>
+                  <i class="far fa-check-square"></i> Create two, two input AND Gates and two LEDs as the outputs<br>
+                  <i class="far fa-check-square"></i> Combine two ICs to build two conditional AND Gates, where the output of is the input of another</p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="far fa-file-pdf"></i> <a href="SP19ETR156/datasheets/sn74ls08.pdf" target="_blank">7408 Datasheet</a><br>
+                  <i class="fas fa-th"></i> <a href="SP19ETR156/wk1LogicCircuits.circ" target="_blank">LogiSIM Circuits from Class</a><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/gI-qXk7XojA" target="_blank">Boolean Logic & Logic Gates - PBS</a><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/5pWS_xfFcl0" target="_blank">00: Introduction to LogiSIM</a><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/0XtfIvPP-P0" target="_blank">00-1: Adding Libraries to LogiSIM</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="http://www.cburch.com/logisim/" target="_blank">LogiSIM Software</a><br>
+                  <i class="fab fa-github"></i> <a href="https://github.com/r0the/logi7400" target="_blank">logi7400: LogiSIM 7400 IC Library - Stefan Rothe</a><br></p>
+                <p><strong>For next class...</strong><br>
+                  For an introduction to Boolean Logic and Gates, please check out this <a href="https://youtu.be/gI-qXk7XojA" target="_blank">PBS Video</a>. To help us build some context and draw circuits, we will use software to guide us through the digital design portion of class. It will help us layout our logic and even simulate it before building a breadboard.<br>
+                  <i class="far fa-check-square"></i> Download and install <a href="http://www.cburch.com/logisim/" target="_blank">LogiSIM</a> if you can<br>
+                  <i class="far fa-check-square"></i> Please watch the LogiSIM <a href="https://youtu.be/5pWS_xfFcl0" target="_blank">video</a> and recreate the circuit we did in class<br>
+                  <i class="far fa-check-square"></i> As a bonus, try to upload the <a href="https://github.com/r0the/logi7400" target="_blank">LogiSIM 7400 Library</a> and create a similar circuit as in the <a href="https://youtu.be/0XtfIvPP-P0" target="_blank">video</a> with 2 outputs</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="123">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">1.23- Gates & LogiSIM</h6>
+                  <p>We are going to look at AND, OR, NOR, and NAND gates, truth tables, and manipulating them in LogiSIM. Lay things out in LogiSIM, then breadboard your experiments using a pushbutton as an input and an LED as an output.</p>
+                  <p><strong>Getting Started:</strong><br>
+                    <i class="far fa-check-square"></i> Take your turn at building a NAND gate, using an AND and a NOT, a 7408 and 7404<br>
+                    <i class="far fa-check-square"></i> Try using a NAND gate as well using the 7400 IC chip<br>
+                    <i class="far fa-check-square"></i> Build a NOR gate and simulate in LogiSIM using the provided IC chips<br>
+                    <i class="far fa-check-square"></i> Using only NAND gates, build an AND and an OR gate<br></p>
+                  <p><strong>Supplemental Materials:</strong><br>
+                    <i class="far fa-file-pdf"></i> <a href="SP19ETR156/datasheets/sn74ls00.pdf" target="_blank">7400 Datasheet</a><br>
+                    <i class="far fa-file-pdf"></i> <a href="SP19ETR156/datasheets/sn74ls04.pdf" target="_blank">7404 Datasheet</a><br>
+                    <i class="fas fa-th"></i> <a href="SP19ETR156/wk2LogicCircuits.circ" target="_blank">LogiSIM Circuits from Class (.circ)</a><br>
+                    <i class="fab fa-wikipedia-w"></i> <a href="https://en.wikipedia.org/wiki/List_of_7400_series_integrated_circuits" target="_blank">List of 74XX Series ICs - Wikipedia</a></p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="130">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">1.30- Combinational Logic</h6>
+                  <p>We will review the previous class, discuss NAND gates and their diversity and usefullness,build a basic understanding of digital (binary) adders, and build a half and full adder.</p>
+                  <p><strong>Getting Started:</strong><br>
+                    <i class="far fa-check-square"></i> Watch the following <a href="https://youtu.be/1GSjbWt0c9M" target="_blank">video</a> to introduce binary numbers<br>
+                    <i class="far fa-check-square"></i> As a class, we will review our preivous projects and have some time to finish last week<br>
+                    <i class="far fa-check-square"></i> We will build a binary adder using new IC chips, including an XOR 7400 series IC<br>
+                    <i class="far fa-check-square"></i> We will draw these out in LogiSIM and play with Eagle to start doing schematics<br>
+                  </p>
+                  <p><strong>Supplemental Materials:</strong><br>
+                    <i class="fab fa-youtube"></i> <a href="https://youtu.be/1GSjbWt0c9M" target="_blank">Representing Numbers in Binary - PBS</a><br>
+                    <i class="fas fa-th"></i> <a href="SP19ETR156/wk3LogicCircuits.circ" target="_blank">LogiSIM Circuits from Class (.circ)</a><br>
+                    <i class="fas fa-bolt"></i> <a href="SP19ETR156/wk3Schematic.sch" target="_blank">Eagle Schematic - .sch</a><br>
+                    <i class="far fa-file-image"></i> <a href="SP19ETR156/wwk3Schematic.png" target="_blank">Eagle Schematic - .png</a><br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="206">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">2.06 - Sequential Logic</h6>
+                  <p>We are going to use this class to review, catch up everyone, and make sure that we can use some of the EDA tools available. We will be downloading a program called <a href="https://www.autodesk.com/education/free-software/eagle" target="_blank">Eagle</a>. There are a lot of resources and we will get started making small schematics and circuit boards!<br>
+                  </p>
+                  <p><strong>Getting Started:</strong><br>
+                    <i class="far fa-check-square"></i> Spend some time finishing the previous class assignments. Make sure that you at least have a half adder. If you are feeling up to it... try to figure out how to make a full adder!<br>
+                    <i class="far fa-check-square"></i> Use this time to document some of the things you are doing. Make sure you have taken pictures and screenshots for yourself!<br>
+                    <i class="far fa-check-square"></i> Download and install Eagle on the desktop or your own computer. If you have not made an educational account with Autodesk, please do so!<br>
+                    <i class="far fa-check-square"></i> Use Eagle to build the previous class schematics and add libraries...<br>
+                  </p>
+                  <p><strong>Supplemental Materials:</strong><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://www.autodesk.com/education/free-software/eagle" target="_blank">Eagle - Autodesk</a><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://trial2.autodesk.com/NET17SWDLD/2017/EGLPRM/ESD/Autodesk_EAGLE_9.3.0_English_Linux_64bit.tar.gz" target="_blank">Eagle 64-Bit Linux Download</a><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://github.com/sparkfun/SparkFun-Eagle-Libraries" target="_blank">Eagle Component Library - Sparkfun</a><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://www.autodesk.com/products/eagle/blog/library-basics-install-use-sparkfun-adafruit-libraries-autodesk-eagle/" target="_blank">How to Install Libraries in Eagle - Autodesk</a><br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="213">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">2.13 - Lab, Project, and Design</h6>
+                  <p><strong>Getting Started:</strong><br>
+                    <i class="far fa-check-square"></i> Finish your half-adder, design in LogiSIM, schematic in Eagle, and breadboard<br>
+                    <i class="far fa-check-square"></i> Build a full-adder, design in LogiSIM, schematic in Eagle, and breadboard<br>
+                    <i class="far fa-check-square"></i> Optionally, build a subtractor, design in LogiSIM, schematic in Eagle, and breadboard<br>
+                    <i class="far fa-check-square"></i> Begin building out the schematic for our first microcontroller for PCB design, create a bill of materials (BOM)<br>
+                  </p>
+                  <p><strong>Supplemental Materials:</strong><br>
+                    <i class="fab fa-youtube"></i> <a href="https://youtu.be/VkgmpZbVQEc" target="_blank">02: Getting Started with Eagle</a><br>
+                    <i class="far fa-file-pdf"></i> <a href="SP19ETR156/Arduino_Uno_Rev3-schematic.pdf" target="_blank">Arduino Uno Rev3 Schematic - .pdf</a><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://www.arduino.cc/en/Main/Standalone" target="_blank">Build a Standalone Arduino on a Breadboard - Arduino.cc</a><br>
+                    <i class="fab fa-youtube"></i> <a href="https://youtu.be/lKTsv6iVxV4" target="_blank">Binary: Plusses & Minuses - Computerphile</a><br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="220">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">2.20 - Snow Day!</h6>
+                  <p>Class cancelled because of the weather. See you next week!</p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="227">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">2.27 - Intro to Microcontrollers</h6>
+                  <p><strong>Getting Started:</strong><br>
+                    <i class="far fa-check-square"></i> Complete any previous labs using the logic IC chips<br>
+                    <i class="far fa-check-square"></i> Begin working through a breadboard example of the schematic for the development board using an ATMEGA 328 microcontroller<br>
+                  </p>
+                  <p><strong>Supplemental Materials:</strong><br>
+                    <i class="far fa-file-image"></i> <a href="SP19ETR156/schematicArduino.jpg" target="_ blank">Arduino Basic Schematic - .jpg</a><br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="306">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">3.06 - PCB Microcontrollers</h6>
+                  <p><strong>Getting Started:</strong><br>
+                    <i class="far fa-check-square"></i> We are going to review parts of the microcontroller and talk about the final projects for the semester.<br>
+                    <i class="far fa-check-square"></i> At this point the schematic for your development board should be complete.<br>
+                  </p>
+                  <p><strong>Supplemental Materials:</strong><br>
+                    <i class="far fa-file-image"></i> <a href="SP19ETR156/week7/basicArduinoEagle.png" target="_blank">Arduino Basic Schematic - .png</a><br>
+                    <i class="fas fa-bolt"></i> <a href="SP19ETR156/week7/arduinoBasic.sch" target="_blank">Arduino Basic Schematic - .sch</a><br>
+                    <i class="far fa-file-archive"></i> <a href="SP19ETR156/week7/loraWANsystem.zip" target="_blank">LORA WAN Project Code - Client & Server</a><br>
+                    <i class="far fa-file-image"></i> <a href="SP19ETR156/week7/feather+MCP9808_bb.png" target="_blank">LORA WAN Project - Client Wiring - .png</a><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://learn.adafruit.com/adafruit-mcp9808-precision-i2c-temperature-sensor-guide" target="_blank">MCP9808 Temp/Hum Sensor Module Guide - Adafruit</a><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="https://github.com/adafruit/Adafruit_MCP9808_Library/archive/master.zip" target="_blank">Adafruit MCP9808 Library - .zip</a><br>
+                    <i class="fas fa-external-link-alt"></i> <a href="SP19ETR156/week7/SparkFun.dru" target="_blank">SparkFun DRU - .dru</a><br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="320">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">3.20 - More Microcontrollers</h6>
+                  </p><strong>Getting Started:</strong><br>
+                  To setup the LoRa WAN project boards, you will need to add the URL to the boards manager:<br><code>https://adafruit.github.io/arduino-board-index/package_adafruit_index.json</code><br> and then select the <strong>Arduino SAMD M0</strong> Boards from the <em>Boards Manager</em>. You will then add <strong>Adafruit SAMD M0</strong>.<br>
+                  </p>
+                  <p><strong>Supplemental Materials:</strong><br>
+                    <i class="far fa-file-archive"></i> <a href="SP19ETR156/week8/rf95+BME280_featherM0.zip" target="_blank">LoRa WAN Project Firmware & Libraries</a><br>
+                    <i class="far fa-file-pdf"></i> <a href="SP19ETR156/datasheets/BST-BME280-DS002.pdf" target="_blank">Bosch BME280 Datasheet - .pdf</a><br>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="410">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">4.10 - RF & PCBS</h6>
+                </p><strong>Final Resources:</strong><br>
+                <i class="far fa-file-archive"></i> <a href="SP19ETR156/wk10/rf95_tempHumBat.zip" target="_blank">Updated Firmware for RF95 Feather M0 - .zip</a><br>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+
+  <!-- Footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="footer-section">
+    <div class="row">
+      <div class="column" align="center">
+        <p><a href="index.html">ebredder.org</a> | <i class="far fa-copyright"></i> 2019 - Eric Bredder</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
