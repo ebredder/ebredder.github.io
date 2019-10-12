@@ -224,6 +224,7 @@
                 <h6 class="docs-header">Week 4</h6>
                 <p>You should have successfully built a simple start/stop function in Codesys. Make sure it does exactly what you want by simulating and testing values. Don't forget to post on the discussion from last week.</p>
                 <p><strong>Getting Started:</strong><br>
+                  Check out the provided examples and video to help with solving your process control loop using what you have built on. You should be able to use simple logic elements and math operators.
                 </p>
                 <p><strong>Supplemental Materials</strong><br>
                   <i class="fab fa-youtube"></i> <a href="https://youtu.be/vRKRJAWwYys" target="_blank">Week 3 Lab Solution</a><br>
@@ -258,6 +259,41 @@
              <div class="row">
               <div class="column">
                 <h6 class="docs-header">Week 5</h6>
+                <p>At this point you should have a basic model of your process control loop. Make sure it does exactly what you want by simulating and testing values. Don't forget to post on the discussion from last week. This week we will dive into some counter and timer examples to expand our logic!</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> In Codesys pull up the information and details for each of the timers and counters. Make sure to look at the block diagram connections.<br>
+                  <i class="far fa-check-square"></i> Check out <a href="https://youtu.be/97sE_jUlPeM" target="_blank">this video</a> on Counters for a brief background that should align with your understanding from the readings.<br>
+                  <i class="far fa-check-square"></i> Check out <a href="https://youtu.be/hVYkdYezSVA" target="_blank">this video</a> on Off Delay Timers (TOF) and <a href="https://youtu.be/tGeV82ni50k" target="_blank">this video</a> on On Delay Timers (TON)<br>
+                </p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://help.codesys.com/webapp/ctu;product=codesys;version=3.5.11.0" target="_blank">Codesys - CTU</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://help.codesys.com/webapp/ton;product=codesys;version=3.5.11.0" target="_blank">Codesys - TON</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://help.codesys.com/webapp/tof;product=codesys;version=3.5.11.0" target="_blank">Codesys - TOF</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2093620" target="_blank">Week 5 Discussion - Counters</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2093616" target="_blank">Week 5 Discussion - Timers</a>
+                </p>
+                <p><strong>Lab 4: Timers & Counters</strong><br>
+                  We will start by creating a simple timer program. Each of the programs will show the difference in the timers and you should be able to look up the diagrams in Codesys to compare.<br>
+                  <i class="far fa-check-square"></i> Create a simple start/stop for your program.<br>
+                  <i class="far fa-check-square"></i> Build a program that flashes a green light on/off using TON every 500ms. This light must flash when in active state of the machine based on the program being started.<br>
+                  <i class="far fa-check-square"></i> Add a TOF that flashes red if a limit switch is tripped. This will enable a red light to flash every 1 second to denote the machine has an error.<br>
+                  <i class="far fa-check-square"></i> Make sure that you can reset your system back to its original state.<br>
+                  Once you have your active state blinking light and error state light wokring with a reset and limit switch, let's use a magnetic switch to count the number of pieces passing through.<br>
+                  <i class="far fa-check-square"></i> Use a counter to continually count a group of metal objects being passed by. Use a CTU to process this request.<br>
+                  <i class="far fa-check-square"></i> When the CTU reaches 100 parts, enable the flashing red light from the previous portion.<br>
+                  <i class="far fa-check-square"></i> Make sure to be able to reset the CTU and TOF.<br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Build a Visualization for the above program in Codesys. Make sure it is interactive and user friendly and uses simple tools.<br>
+                  <i class="far fa-check-square"></i> Read Part IV, Chapter 9 of Programmable Logic Controllers - Hanssen<br>
+                  <i class="far fa-check-square"></i> Answer the questions in both discussions. Comment on 2 other posts for each and try to help out or ask questions if you are not sure!<br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/assignments/4306285" target="_blank">TOF/TON/CTU Program Submission</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
 
   <!-- Footer
     –––––––––––––––––––––––––––––––––––––––––––––––––– -->
