@@ -281,7 +281,7 @@
                   <i class="far fa-check-square"></i> Build a program that flashes a green light on/off using TON every 500ms. This light must flash when in active state of the machine based on the program being started.<br>
                   <i class="far fa-check-square"></i> Add a TOF that flashes red if a limit switch is tripped. This will enable a red light to flash every 1 second to denote the machine has an error.<br>
                   <i class="far fa-check-square"></i> Make sure that you can reset your system back to its original state.<br>
-                  Once you have your active state blinking light and error state light wokring with a reset and limit switch, let's use a magnetic switch to count the number of pieces passing through.<br>
+                  <i class="far fa-check-square"></i> Once you have your active state blinking light and error state light working with a reset and limit switch, let's use a magnetic switch to count the number of pieces passing through.<br>
                   <i class="far fa-check-square"></i> Use a counter to continually count a group of metal objects being passed by. Use a CTU to process this request.<br>
                   <i class="far fa-check-square"></i> When the CTU reaches 100 parts, enable the flashing red light from the previous portion.<br>
                   <i class="far fa-check-square"></i> Make sure to be able to reset the CTU and TOF.<br>
@@ -296,6 +296,38 @@
             </div>
           </div>
         </div>
+
+        <div class="docs-section" id="wk6">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">Week 6</h6>
+                <p> You should now be comfortable with timers and counters! We will use these extensively to control our programs. We are going to setup for using our small PLC that we purchased for class and also start some structured text</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Download and install the Velocio PLC software, <a href="http://velocio.net/vBuilder/" target="_blank">vBuilder</a> and <a href="http://velocio.net/vFactory/" target="_blank">vFactory on your Windows machine</a><br>
+                  <i class="far fa-check-square"></i> Review the <a href="https://youtu.be/vNgJ2WAYGP4" target="_blank">TON flashing video</a> to make sure you are off to the right start in the previous examples from last posting.
+                </p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="http://velocio.net/wp-content/uploads/2016/01/vBuilder-Manual.pdf" target="_blank">vBuilder Manual</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="http://velocio.net/tutorials/" target="_blank">vBuilder Tutorials Page</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2144248" target="_blank">Week 6 Discussion - ST</a><br>
+                  <a href="https://www.plcacademy.com/structured-text-tutorial.pdf" target="_blank">plcacademy - Structured Text Overview</a>
+                </p>
+                <p><strong>Lab 4: Timers & Counters</strong><br>
+                  <i class="far fa-check-square"></i> Make sure your setup your PLC properly with the software. We will be running through a few simple examples from the manufacturer.<br>
+                  <i class="far fa-check-square"></i> Work through "Getting Started", "State Machines", "Timer Examples", "Rising Edge", and "Real Time Clock" to make sure you work through the flow of the tools.<br>
+                  <i class="far fa-check-square"></i> Use the video tutorials provided and the examples as reference. The logic in these examples should be review.<br>
+                  <i class="far fa-check-square"></i> Use the Structured Text overview to guide yourself through the next examples. We will be creating a traffic light example in Codesys using ST.<br>
+                  <i class="far fa-check-square"></i> Start by defining your variables in ST in Codesys. You will need to make sure that there are 3 lights, and some inputs. The inputs will be car sensors. Use timers to change the lighting.<br>
+                  <i class="far fa-check-square"></i> Build a process flow chart for your traffic light. Use draw.io or similar to make it happen!<br>
+                  <i class="far fa-check-square"></i> Make sure to provide instances for a full intersection of traffic lights. This will include 2 separate systems that interact with each other.<br>
+                  <i class="far fa-check-square"></i> Complete the example in ST and build a visualization for your simulation using colored lights.<br>
+                  <i class="far fa-check-square"></i> Make sure that your traffic light instance works and can function either without car sensors or will change with them!<br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Read Part IV, Chapter 11 of Programmable Logic Controllers - Hanssen<br>
+                  <i class="far fa-check-square"></i> Answer the questions in discussion. Comment on 2 other posts for each and try to help out or ask questions if you are not sure!<br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/assignments/4395865" target="_blank">Traffic Light Project Submission</a>
 
 
   <!-- Footer
