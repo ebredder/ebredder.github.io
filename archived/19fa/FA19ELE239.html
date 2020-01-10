@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Eric Bredder-ELE239</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <script src="js/site.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.10.1/js/all.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div id="top" class="column" align="center" style="margin-top: 15%">
+        <h2>ELE239 - Programmable Controllers</h2>
+      </div>
+    </div>
+      <div class="row">
+        <div class="column" align="left">
+        <p><a href="http://www.pvcc.edu/" target="_blank">Piedmont Virginia Community College</a><br>
+          Fall 2019 | Online<br>
+        <a href="ELE239/syllabusELE239.html" target="_blank">Syllabus</a><br>
+        <a href="Docs/ETRDocumentationv2.pdf" target="_blank">Documentation Guidelines</a><br>
+        <a href="Docs/FA19LabHours.pdf" target="_blank">Fall 2019 Open Lab Hours</a><br>
+        <a href="https://forms.gle/KNBJ9PCaBUFLaib5A" target="_blank">Anonymous Feedback Form</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-spacer"></div>
+  <nav class="navbar">
+     <div class="container">
+       <ul class="navbar-list">
+         <li class="navbar-item"><a class="navbar-link" href="http://ebredder.org">Home</a></li>
+         <li class="navbar-item">
+           <a class="navbar-link" href="#class" data-popover="#classPopover">Classes</a>
+           <div id="classPopover" class="popover">
+             <ul class="popover-list">
+               <li class="popover-item">
+                 <a class="popover-link" href="#introduction">Introduction</a>
+               </li>
+               <li class="popover-item">
+                <a class="popover-link" href="#wk1">Week 1</a>
+               </li>
+               <li class="popover-item">
+               <a class="popover-link" href="#wk2">Week 2</a>
+               </li>
+               <li class="popover-item">
+               <a class="popover-link" href="#wk3">Week 3</a>
+               </li>
+               <li class="popover-item">
+               <a class="popover-link" href="#wk4">Week 4</a>
+               </li>
+               <li class="popover-item">
+               <a class="popover-link" href="#wk5">Week 5</a>
+               </li>
+             </ul>
+           </div>
+         </li>
+         <li class="navbar-item"><a class="navbar-link" href="#top">Top</a></li>
+         <li class="navbar-item"><a class="navbar-link" href="https://www.youtube.com/playlist?list=PLJcB3ij-FnyuYB844ADt2o9Q_BJ3BBRa6" target="_blank">Videos</a></li>
+       </ul>
+     </div>
+   </nav>
+
+         <div class="docs-section" id="intro">
+            <div class="container">
+              <div class="row">
+               <div class="column">
+                 <h6 class="docs-header">Introduction</h6>
+                 <p><strong>ELE239 - Programmable Controllers</strong>
+                   <br>Examines installation, programming, interfacing, and concepts of troubleshooting programmable controllers.</p>
+                   <p>Required Materials:<br>
+                     <i class="fas fa-book-open"></i> <a href="https://www.wiley.com/en-us/Programmable+Logic+Controllers%3A+A+Practical+Approach+to+IEC+61131+3+using+CoDeSys-p-9781118949245" target="_blank">Programmable Logic Controllers: A Practical Approach to IEC 61131-3 using CoDeSys - Dag Hanssen</a><br>
+                     <i class="fas fa-tools"></i> <a href="http://velocio.net/ace/" target="_blank">Velocio Ace 11 PLC</a><br>
+                     <i class="fas fa-tools"></i> <a href="http://velocio.net/wp-content/uploads/2014/03/PowerDS-vPower.pdf" target="_blank">5V 2A Wall Plug</a><br>
+                     <i class="fas fa-tools"></i> <a href="https://www.amazon.com/Monoprice-10-Feet-Mini-B-Ferrite-105449/dp/B002KL8J8W" target="_blank">USB to Mini USB Cable w Data</a><br>
+                    Software:<br>
+                    <i class="fas fa-laptop-code"></i> <a href="https://www.codesys.com/download.html" target="_blank">Codesys</a><br>
+                    Resources:<br>
+                    <i class="far fa-file-pdf"></i> <a href="https://drive.google.com/open?id=1FLBylw8wYQOhmiF7VMg6RhP1Ilv2P-dH" target="_blank">Textbook</a><br>
+                    <i class="fab fa-youtube"></i> <a href="https://www.youtube.com/playlist?list=PLJcB3ij-FnyuYB844ADt2o9Q_BJ3BBRa6" target="_blank">Class Video Playlist</a>
+                  </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="wk1">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">Week 1</h6>
+                <p>Welcome to ELE 239! I will be posting content and labs each Friday and following with solutions and updates the following week. This post serves as an introduction to the course, syllabus, and the structure. Feel free to reach out if you need anything. Make sure to have all the class materials by the end of next week!</p>
+                <p><strong>Getting Started:</strong><br>
+                  Watch the intro video and read the syllabus. Contact me with any questions! Please introduce yourself on Canvas in the dicussion forum. We will be using Canvas as a discussion and announcement tool. Make sure you can log into Canvas!
+                </p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="far fa-file-alt"></i> <a href="ELE239/syllabusELE239.html" target="_blank">ELE239 Syllabus</a><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/NC06H-wO1Uw" target="_blank">Week 1 Introduction Video</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/1967352" target="_blank">Discussion Post 1</a><br>
+                  <i class="fas fa-cloud-download-alt"></i> <a href="https://drive.google.com/file/d/1myhZoq70uz9RhnReMJvNoFqBYkvCFe05/view?usp=sharing" target="_blank">Codesys x64 3.5.15 Download</a><br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Watch the introduction video for the class.<br>
+                  <i class="far fa-check-square"></i> Respond to the Canvas Discussion post introducing yourself and read others' posts to get to know people in the class!<br>
+                  <i class="far fa-check-square"></i> Read Part I, Chapter 1 & 2 of Programmable Logic Controllers - Hanssen<br>
+                  <i class="far fa-check-square"></i> Download and install Codesys 3.5 for Windows using the above links. Codesys is also available on the lab laptop computers for your use on campus.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="wk2">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">Week 2</h6>
+                <p>Thank you for introducing yourself and getting started on our class! Hopefully you can access Canvas properly and participate on the discussion. This week we will install Codesys and test its functionality. We will also review the readings and provide some additional support.</p>
+                <p><strong>Getting Started:</strong><br>
+                  Please utilize the Codesys Development Help as needed. It is also available in Codesys. Watch the intro video and begin your first program. We will be creating a simple program to just test our development environment and see if everything is working properly. This excercise will provide context as we progress.</p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://help.codesys.com/webapp/_cds_f_development_system_introduction;product=codesys;version=3.5.15.0" target="_blank">Codesys Help Dev Environment</a><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/2p4GT30C7V8" target="_blank">Introduction to Codesys Tutorial</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/1995991" target="_blank">Discussion Post 2</a>
+                </p>
+                <p><strong>Lab 1: Development Environment</strong><br>
+                  We will be utilizing Codesys and the IEC standard to write our programs. This week will be a short introduction to Codesys to help familiarize yourself with the program and its features. Refer to help documentation when needed. Follow below:<br>
+                  <i class="far fa-check-square"></i> Follow along with the tutorial to create a simple program in a virtual PLC.<br>
+                  <i class="far fa-check-square"></i> Create a new 'Standard Project' in Codesys. Name your project <em>01ELE239IntroLastname</em>.<br>
+                  <i class="far fa-check-square"></i> Setup your device to be the 'CODESYS Control Win V3' using Ladder Logic.<br>
+                  <i class="far fa-check-square"></i> Open your <em>PLC_PRG (PRG)</em> by double-clicking on the left in the devices tree.<br>
+                  <i class="far fa-check-square"></i> Notice the Program Tools, Program Construction and Program Variable docking windows. In the Program Tools list, find the 'Contact' and drag it over to the 'Start Here' icon in the Pogram Construction window.<br>
+                  <i class="far fa-check-square"></i> Rename the <em>???</em> variable to <em>Button1</em> and make sure it is BOOL.<br>
+                  <i class="far fa-check-square"></i> Find the 'Coil' element and drag it onto the contact labeled <em>Button1</em>. Name the Coil <em>Light</em> as a BOOL.<br>
+                  <i class="far fa-check-square"></i> Find the Online dropdown and select Simulation mode. Then Login to the controller.<br>
+                  <i class="far fa-check-square"></i> From here you can test all your possible scenarios for the I/O. Start your simulation and play with the values in the table.<br>
+                  <i class="far fa-check-square"></i> The Debug dropdown will allow you to Start the controller and Write Values that you selected.<br>
+                  <i class="far fa-check-square"></i> Add 2 more rungs with different variable names. Can you make one of the coils activate the other two contacts, in turn activating three coils at the same time? How would you accomplish this?
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Read Part I, Chapter 3 of Programmable Logic Controllers - Hanssen<br>
+                  <i class="far fa-check-square"></i> Answer the questions in the discussion and provide 2 responses to other posts. Make sure to comment and question other students' responses!<br>
+                  <i class="far fa-check-square"></i> Make sure you work through Lab 1 to have a working single rung proram and simulation. Then build the other two rungs as you think they should be. Reach out if you need nay help with this!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="wk3">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">Week 3</h6>
+                <p>You should have successfully developed your first ladder logic diagram program in Codesys. Make sure it does exactly what you want by simulating and testing values. Don't forget to post on the discussion from last week.</p>
+                <p><strong>Getting Started:</strong><br>
+                  Create a mental model of a simple automated system you use regularly or are familiar with. I won't constrain you to anything in particular, but a good example would be the basic heating/cooling system, a carnival ferris wheel, a pinball machine, a home security system, or something that senses/detects and changes based on that reading! Get creative.<br>
+                  <i class="far fa-check-square"></i> Model your simple system as a flow chart. To quickly do this, try <a href="https://www.draw.io/" target="_blank">draw.io</a> and use different geometries to determine different things. Your goal is to make sure you build a process loop. You learned about a variety of sensors from the readings.<br>
+                  <i class="far fa-check-square"></i> Make sure that your system includes a sensor/reading, control/set point, controller, predetermined values, and a way to modify the system.<br>
+                  <i class="far fa-check-square"></i> Feel free to use this as an example: <a href="http://controlguru.com/wp-content/uploads/2015/03/loophomebig.jpg" target="_blank">Simple Heating Process Loop</a>.<br>
+                  <i class="far fa-check-square"></i> Post your system on the appropriate <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2014322" target="_blank">discussion board</a> for feedback.
+                </p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/SlkFE6ncr1k" target="_blank">Week 2 Lab Solution</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://help.codesys.com/api-content/2/codesys/3.5.12.0/en/_cds_struct_reference_datatypes/#c2bdb4ccec0a8640e0157fbed-id-b8c8a0ca2bdb4ccdc0a8640e00e8ce32" target="_blank">Data Types - Codesys</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://en.wikipedia.org/wiki/Ladder_logic#Industrial_STOP/START" target="_blank">Industrial Start/Stop</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2014322" target="_blank">Week 3 Discssion - Control Process Loop</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2023854" target="_blank">Week 3 Discussion - Start/Stop & Variables</a>
+                </p>
+                <p><strong>Lab 2: Beginning our Program</strong><br>
+                  In Codesys we will develop a unique program for our control process loops. We will simulate and make sure that everything is working and meets the needs of the system.<br>
+                  <i class="far fa-check-square"></i> Start by listing the variables you need for your system.<br>
+                  <i class="far fa-check-square"></i> Use the top section to develop your variables before you begin your program.<br>
+                  <i class="far fa-check-square"></i> In the above example I would create a setpoint (INT), start (BOOL), stop (BOOL), indicatorLight (BOOL), temperature (INT) to create a simple system.<br>
+                  <i class="far fa-check-square"></i> This system would have a user-defined setpoint, start the heating at a certain temperature reading, turn on an indicator light when heating, and shutdown when temperature is reached.<br>
+                  <i class="far fa-check-square"></i> We will begin the process by creating a simple start/stop function and if you would like you can include a reset here. We want the system to turn on with the user, but stay on until asked to do so.<br>
+                  <i class="far fa-check-square"></i> Create a rung that starts the system and continues to stay on regardless of the user.<br>
+                  <i class="far fa-check-square"></i> Make sure to use the defined variables from earlier. If you can begin laying out your whole system. What are you missing in your logic? What would make it easier?<br>
+                  <i class="far fa-check-square"></i> Ensure all variables are labeled and your start/stop rung is complete. Test it in simulation and have it activate another rung with a simple coil.
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Read Part III, Chapter 5 - Chapter 6.6.5 of Programmable Logic Controllers - Hanssen<br>
+                  <i class="far fa-check-square"></i> Answer the questions in both discussions. Comment on 2 other posts for each and try to help out or ask questions if you are not sure!<br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/assignments/4271983" target="_blank">Start/Stop Program Submission</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="wk4">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">Week 4</h6>
+                <p>You should have successfully built a simple start/stop function in Codesys. Make sure it does exactly what you want by simulating and testing values. Don't forget to post on the discussion from last week.</p>
+                <p><strong>Getting Started:</strong><br>
+                  Check out the provided examples and video to help with solving your process control loop using what you have built on. You should be able to use simple logic elements and math operators.
+                </p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/vRKRJAWwYys" target="_blank">Week 3 Lab Solution</a><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/c1voftKIrmg" target="_blank">Week 4 Examples</a><br>
+                  <i class="far fa-file-archive"></i> <a href="ELE239\heater1.zip" target="_blank">Example 1 - .zip</a><br>
+                  <i class="far fa-file-archive"></i> <a href="ELE239\heater2.zip" target="_blank">Example 2 - .zip</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2069055" target="_blank">Week 4 Discussion - Ladder Logic Process</a>
+
+                </p>
+                <p><strong>Lab 3: Full Process Loop</strong><br>
+                  <i class="far fa-check-square"></i> Begin your project with a start/stop rung. You may reuse your previous example.<br>
+                  <i class="far fa-check-square"></i> Your goal is to recreate your process loop that you drew last lab. Look at each of the stages and break that down into related rungs.<br>
+                  <i class="far fa-check-square"></i> Start with your human input and make a setpoint or similar as an INT variable.<br>
+                  <i class="far fa-check-square"></i> Once that setpoint is hit, make sure the system turns on the main function. In my example case this is the heater.<br>
+                  <i class="far fa-check-square"></i> Allow the system to add to its value manually. Make an input control the input (temperature) variable.<br>
+                  <i class="far fa-check-square"></i> As you enact that input from the system, increase the input variable. Have the system turn on or stop when a certain number is reached.<br>
+                  <i class="far fa-check-square"></i> This will change the operation of the control loop and the process should start over. You can manually change the setpoint/temperature with the variable.<br>
+                  <i class="far fa-check-square"></i> Simplify the system with inputs and outputs that are connected and give a good example of your process control loop.<br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Read Part II, Chapter 4 of Programmable Logic Controllers - Hanssen<br>
+                  <i class="far fa-check-square"></i> Answer the questions in both discussions. Comment on 2 other posts for each and try to help out or ask questions if you are not sure!<br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/assignments/4271984" target="_blank">Process Loop Program Submission</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="wk5">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">Week 5</h6>
+                <p>At this point you should have a basic model of your process control loop. Make sure it does exactly what you want by simulating and testing values. Don't forget to post on the discussion from last week. This week we will dive into some counter and timer examples to expand our logic!</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> In Codesys pull up the information and details for each of the timers and counters. Make sure to look at the block diagram connections.<br>
+                  <i class="far fa-check-square"></i> Check out <a href="https://youtu.be/97sE_jUlPeM" target="_blank">this video</a> on Counters for a brief background that should align with your understanding from the readings.<br>
+                  <i class="far fa-check-square"></i> Check out <a href="https://youtu.be/hVYkdYezSVA" target="_blank">this video</a> on Off Delay Timers (TOF) and <a href="https://youtu.be/tGeV82ni50k" target="_blank">this video</a> on On Delay Timers (TON)<br>
+                </p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://help.codesys.com/webapp/ctu;product=codesys;version=3.5.11.0" target="_blank">Codesys - CTU</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://help.codesys.com/webapp/ton;product=codesys;version=3.5.11.0" target="_blank">Codesys - TON</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://help.codesys.com/webapp/tof;product=codesys;version=3.5.11.0" target="_blank">Codesys - TOF</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2093620" target="_blank">Week 5 Discussion - Counters</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2093616" target="_blank">Week 5 Discussion - Timers</a>
+                </p>
+                <p><strong>Lab 4: Timers & Counters</strong><br>
+                  We will start by creating a simple timer program. Each of the programs will show the difference in the timers and you should be able to look up the diagrams in Codesys to compare.<br>
+                  <i class="far fa-check-square"></i> Create a simple start/stop for your program.<br>
+                  <i class="far fa-check-square"></i> Build a program that flashes a green light on/off using TON every 500ms. This light must flash when in active state of the machine based on the program being started.<br>
+                  <i class="far fa-check-square"></i> Add a TOF that flashes red if a limit switch is tripped. This will enable a red light to flash every 1 second to denote the machine has an error.<br>
+                  <i class="far fa-check-square"></i> Make sure that you can reset your system back to its original state.<br>
+                  <i class="far fa-check-square"></i> Once you have your active state blinking light and error state light working with a reset and limit switch, let's use a magnetic switch to count the number of pieces passing through.<br>
+                  <i class="far fa-check-square"></i> Use a counter to continually count a group of metal objects being passed by. Use a CTU to process this request.<br>
+                  <i class="far fa-check-square"></i> When the CTU reaches 100 parts, enable the flashing red light from the previous portion.<br>
+                  <i class="far fa-check-square"></i> Make sure to be able to reset the CTU and TOF.<br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Build a Visualization for the above program in Codesys. Make sure it is interactive and user friendly and uses simple tools.<br>
+                  <i class="far fa-check-square"></i> Read Part IV, Chapter 9 of Programmable Logic Controllers - Hanssen<br>
+                  <i class="far fa-check-square"></i> Answer the questions in both discussions. Comment on 2 other posts for each and try to help out or ask questions if you are not sure!<br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/assignments/4306285" target="_blank">TOF/TON/CTU Program Submission</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="wk6">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">Week 6</h6>
+                <p> You should now be comfortable with timers and counters! We will use these extensively to control our programs. We are going to setup for using our small PLC that we purchased for class and also start some structured text</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Download and install the Velocio PLC software, <a href="http://velocio.net/vBuilder/" target="_blank">vBuilder</a> and <a href="http://velocio.net/vFactory/" target="_blank">vFactory</a> on your Windows machine</a><br>
+                  <i class="far fa-check-square"></i> Review the <a href="https://youtu.be/vNgJ2WAYGP4" target="_blank">TON flashing video</a> to make sure you are off to the right start in the previous examples from last posting.
+                </p>
+                <p><strong>Supplemental Materials</strong><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="http://velocio.net/wp-content/uploads/2016/01/vBuilder-Manual.pdf" target="_blank">vBuilder Manual</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="http://velocio.net/tutorials/" target="_blank">vBuilder Tutorials Page</a><br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/discussion_topics/2144248" target="_blank">Week 6 Discussion - ST</a><br>
+                  <i class="far fa-file-pdf"></i> <a href="https://www.plcacademy.com/structured-text-tutorial.pdf" target="_blank">plcacademy - Structured Text Overview</a>
+                </p>
+                <p><strong>Lab 5: PLC & ST</strong><br>
+                  <i class="far fa-check-square"></i> Make sure your setup your PLC properly with the software. We will be running through a few simple examples from the manufacturer.<br>
+                  <i class="far fa-check-square"></i> Work through "Getting Started", "State Machines", "Timer Examples", "Rising Edge", and "Real Time Clock" to make sure you work through the flow of the tools.<br>
+                  <i class="far fa-check-square"></i> Use the video tutorials provided and the examples as reference. The logic in these examples should be review.<br>
+                  <i class="far fa-check-square"></i> Use the Structured Text overview to guide yourself through the next examples. We will be creating a traffic light example in Codesys using ST.<br>
+                  <i class="far fa-check-square"></i> Start by defining your variables in ST in Codesys. You will need to make sure that there are 3 lights, and some inputs. The inputs will be car sensors. Use timers to change the lighting.<br>
+                  <i class="far fa-check-square"></i> Build a process flow chart for your traffic light. Use draw.io or similar to make it happen!<br>
+                  <i class="far fa-check-square"></i> Make sure to provide instances for a full intersection of traffic lights. This will include 2 separate systems that interact with each other.<br>
+                  <i class="far fa-check-square"></i> Complete the example in ST and build a visualization for your simulation using colored lights.<br>
+                  <i class="far fa-check-square"></i> Make sure that your traffic light instance works and can function either without car sensors or will change with them!<br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Read Part IV, Chapter 11 of Programmable Logic Controllers - Hanssen<br>
+                  <i class="far fa-check-square"></i> Answer the questions in discussion. Comment on 2 other posts for each and try to help out or ask questions if you are not sure!<br>
+                  <i class="fas fa-graduation-cap"></i> <a href="https://learn.vccs.edu/courses/180546/assignments/4395865" target="_blank">Traffic Light Project Submission</a>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+  <!-- Footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="footer-section">
+    <div class="row">
+      <div class="column" align="center">
+        <p><a href="http://www.ebredder.org">ebredder.org</a> | <i class="far fa-copyright"></i> 2019 - Eric Bredder</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

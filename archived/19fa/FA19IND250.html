@@ -1,0 +1,424 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Eric Bredder-IND250/251</title>
+  <meta name="description" content="">
+  <meta name="author" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href='http://fonts.googleapis.com/css?family=Lora' rel='stylesheet' type='text/css'>
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+
+  <!-- Scripts
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+  <script src="https://google-code-prettify.googlecode.com/svn/loader/run_prettify.js"></script>
+  <link rel="stylesheet" href="css/github-prettify-theme.css">
+  <script src="js/site.js"></script>
+  <script src="https://use.fontawesome.com/releases/v5.10.1/js/all.js"></script>
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.png">
+
+</head>
+<body>
+
+  <!-- Primary Page Layout
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="container">
+    <div class="row">
+      <div id="top" class="column" align="center" style="margin-top: 15%">
+        <h2>IND 250/251 - Computer Integrated Manufacturing</h2>
+      </div>
+    </div>
+      <div class="row">
+        <div class="column" align="left">
+        <p><a href="http://www.pvcc.edu/" target="_blank">Piedmont Virginia Community College</a><br>
+          Fall 2019 | Tues 4-6:45 PM<br>
+        <a href="IND250/syllabusIND250.html" target="_blank">IND250 Syllabus</a><br>
+        <a href="IND251/syllabusIND251.html" target="_blank">IND251 Syllabus</a><br>
+        <a href="Docs/ETRDocumentationv2.pdf" target="_blank">Documentation Guidelines</a><br>
+        <a href="Docs/FA19LabHours.pdf" target="_blank">Fall 2019 Open Lab Hours</a><br>
+        <a href="https://forms.gle/KNBJ9PCaBUFLaib5A" target="_blank">Anonymous Feedback Form</a></p>
+      </div>
+    </div>
+  </div>
+
+  <div class="navbar-spacer"></div>
+  <nav class="navbar">
+     <div class="container">
+       <ul class="navbar-list">
+         <li class="navbar-item"><a class="navbar-link" href="http://ebredder.org">Home</a></li>
+         <li class="navbar-item">
+           <a class="navbar-link" href="#class" data-popover="#classPopover">Classes</a>
+           <div id="classPopover" class="popover">
+             <ul class="popover-list">
+               <li class="popover-item">
+                <a class="popover-link" href="#introduction">Introduction</a>
+               </li>
+               <li class="popover-item">
+                <a class="popover-link" href="#820">8.20</a>
+               </li>
+               <li class="popover-item">
+                <a class="popover-link" href="#827">8.27</a>
+               </li>
+              <li class="popover-item">
+                <a class="popover-link" href="#903">9.03</a>
+              </li>
+              <li class="popover-item">
+                <a class="popover-link" href="#910">9.10</a>
+              </li>
+              <li class="popover-item">
+                <a class="popover-link" href="#917">9.17</a>
+              </li>
+              <li class="popover-item">
+                <a class="popover-link" href="#924">9.24</a>
+              </li>
+              <li class="popover-item">
+                <a class="popover-link" href="#1001">10.01</a>
+              </li>
+            </ul>
+           </div>
+         </li>
+         <li class="navbar-item"><a class="navbar-link" href="#top">Top</a></li>
+       </ul>
+     </div>
+   </nav>
+
+         <div class="docs-section" id="intro">
+            <div class="container">
+              <div class="row">
+               <div class="column">
+                 <h6 class="docs-header">Introduction</h6>
+                 <p><strong>IND 250 - Computer Integrated Manufacturing</strong>
+                    <br>Presents basic principles used in the design and implementation in a computer integrated manufacturing system. Emphasizes team concept and all aspects of a computer integrated manufacturing system to include the following: Robotics, Conveyor Control, Machining Center Integration Quality Control, Statistical Quality Control, and Computer Integrated Manufacturing (CIM) software.</p>
+                    <p>Required Materials:<br>
+                      <i class="fas fa-book-open"></i> <a href="https://books.industrialpress.com/cnc-trade-secrets.html" target="_blank">CNC Trade Secrets - James Harvey</a><br>
+                      <i class="fas fa-wrench"></i> <a href="https://www.grainger.com/product/PYRAMEX-Exeter-Anti-Fog-34WR32" target="_blank">Full Frame Anti-Fog Safety Glasses</a><br>
+                      <i class="fas fa-wrench"></i> <a href="https://www.grainger.com/product/GENERAL-Fractional-Digital-Caliper-1XHP6" target="_blank">Digital Caliper</a><br>
+                      Software:<br>
+                      <i class="fas fa-compact-disc"></i> <a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators" target="_blank">Autodesk Fusion 360</a><br>
+                      <i class="fas fa-compact-disc"></i> <a href="https://cam.autodesk.com/hsmposts?" target="_blank">Fusion 360 Post Processors</a><br>
+                      <i class="fas fa-compact-disc"></i> <a href="https://www.ulsinc.com/support/software-downloads" target="_blank">Universal Laser Cutter - ULC Control Panel</a><br>
+                      <i class="fas fa-compact-disc"></i> <a href="https://carbide3d.com/downloads/" target="_blank">Carbide 3D - Software Downloads</a><br>
+                      Resources:<br>
+                      <i class="far fa-file-pdf"></i> <a href="archived/19sp/SP19IND250/Fundamentals_of_CNC_Machining.pdf" target="_blank">Fundamentals of CNC Machining - Autodesk</a><br>
+                      <i class="fas fa-external-link-alt"></i> <a href="https://www.tormach.com/machine-codes/" target="_blank">Tormach Machine Code Reference</a><br>
+                      <i class="fab fa-google-drive"></i> <a href="https://drive.google.com/open?id=18UbKv1psOnMXdsbRxQkpSG6dG9cbG3Y5zspQ07VVGEU" target="_blank">Class Speeds and Feeds Chart</a>
+                    </p>
+                 <p><strong>IND 251 - Autmomated Manufacturing Systems</strong>
+                    <br>Presents basic principles used in the design and implementation in manufacturing work cells. Includes selection of the robot system, worksite, application cell sensors, development of cycle times, and economic analysis.</p>
+                 <p>Required Materials:<br>
+                   <i class="fas fa-wrench"></i> <a href="https://www.grainger.com/product/WESTWARD-Friction-Thimble-Outside-Micrometer-4KU90" target="_blank">Thimble Outside Micrometer, 0-1 in.</a><br>
+                   <i class="fas fa-wrench"></i> <a href="https://www.grainger.com/product/MITUTOYO-Edge-Finder-1ZRN3?searchBar=true&searchQuery=1zrn3" target="_blank">Cylindrical Edge Finder, .2 in tip</a><br>
+                    Software:<br>
+                    <em>Same as IND250</em><br>
+                    Resources:<br>
+                    <em>Same as IND250</em></p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="820">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">8.20 - Welcome!</h6>
+                <p>Welcome to IND250 and 251! We will introduce the class concepts, review the syllabus, and create a small introductory project using simple geometry and materials</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Create a simple 3D container using 3/16" foam core board that contains a continuous side panel<br>
+                  <i class="far fa-check-square"></i> The container cannot have 4 flat sides, can be 3 or more than 4<br>
+                  <i class="far fa-check-square"></i> Create a miter tool to meet the number of sides and the internal angle of the flat panel<br>
+                  <i class="far fa-check-square"></i> Determine the angle you need to cut in the material using your created tool and razor blade<br>
+                  <i class="far fa-check-square"></i> Create a minimal base and hot/CA glue to flat layout walls to create your 3D container<br>
+                </p>
+                <p><strong>Supplemental Materials:</strong><br>
+                  <i class="far fa-file-pdf"></i> <a href="Docs/PVCCPhoto-VideoReleaseForm.pdf" target="_blank">PVCC Photo Release Form</a><br>
+                  <i class="fas fa-cube"></i> <a href="IND250/week1/octoBox3D.f3d" target="_blank">Class Example - 8-Sided Box (Fusion 360 .f3d)</a><br>
+                  <i class="fas fa-cube"></i> <a href="IND250/week1/octoBoxDXF.zip" target="_blank">Class Example - 8-Sided Box (.dxf)</a><br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Continue to work on your design for next week. We will finish in class. If you need to laser cut or use the lab please refer to lab or office hours.<br>
+                  <i class="far fa-check-square"></i> Create an <a href="https://www.autodesk.com/products/fusion-360/students-teachers-educators" target="_blank">Autodesk Educational Account</a> if you have not done so already. This will be used to log in to Fusion 360 to perform our CAM operations<br>
+                  <i class="far fa-check-square"></i>Make sure to fill out the photo release form and submit via this form: <a href="https://forms.gle/w5ojCQMs6RTEjhXc8" target="_blank">Photo Release Form Submission</a><br>
+                  <strong>IND251:</strong><br>
+                  <i class="far fa-check-square"></i> Please fill out this form to build out the syllabus and topics for this semester: <a href="https://forms.gle/BmgRXRwYkMkh7Qzt6" target="_blank">IND251 Syllabus Form</a><br>
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="827">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">8.27 - Overview of CNC</h6>
+                <p>This is an overview of the safety, tools, machines and processes for this class. We are looking at programming simple 2D parts using DXF file format. This will introduce the desktop CNC and using conversational mode on the mills. We will be using simple tooling to work though our first part together.</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Adjust the 2D profile to your liking. We will create some tool holders for extra tooling.<br>
+                  <i class="far fa-check-square"></i> If you are using the Carbide, create a simple toolholder for 1/4 in and 1/8 in bits.<br>
+                  <i class="far fa-check-square"></i> If you are using the Tormach, create a DXF in conversational to create a toolholder for 1/4" and TTS. Use the online PathPilot to build your DXF path with tools.<br>
+                  <i class="far fa-check-square"></i> We will using simple tools to create a part on the CNC. This will provide context for all the operations as we move forward.<br>
+                  <strong>IND250:</strong><br>
+                  Using Fusion 360, change the parameters of the design and work in the CAM space to build a toolpath for the Carbide3D Desktop CNC.<br>
+                  <i class="far fa-check-square"></i> Manipulate your design in Fusion 360 to suit your needs. Fit the material chosen.<br>
+                  <i class="far fa-check-square"></i> Import the tool library and post processor for the desktop CNC.<br>
+                  <i class="far fa-check-square"></i> Create a simple toolpath using a 1/4" cutter that outlines the shape of the part and cuts your holes.<br>
+                  <i class="far fa-check-square"></i> As a bonus you can add a simple facing operation.<br>
+                  <i class="far fa-check-square"></i> Sand and finish your part. Measure to compare!<br>
+                  <strong>IND251:</strong><br>
+                  Use the PathPilot HUB to import a DXF from Fusion 360. Create your GCODE and then work the conversational tool on the Tormach 1100. Create your tool holder during class.<br>
+                  <i class="far fa-check-square"></i> Manipulate your design in Fusion 360 to suit your needs. Fit the material chosen.<br>
+                  <i class="far fa-check-square"></i> Start the tool library and post processor for the Tormach PCNC1100.<br>
+                  <i class="far fa-check-square"></i> Work to design a full extra tool holder and two in process TTS tool holders for each project.<br>
+                  <i class="far fa-check-square"></i> Use the conversational facing, DXF and drilling to make your parts on the 1100.<br>
+                  <i class="far fa-check-square"></i> Sand and finish your parts. Make sure you add your settings appropriately to the Feeds and Speeds Googloe Doc.
+                </p>
+                <p><strong>Supplemental Materials:</strong><br>
+                  <i class="fas fa-cube"></i> <a href="IND250/week2/parametricBitHolderBlock.f3d" target="_blank">Parametric Tool Holder Design (.f3d)</a><br>
+                  <i class="fab fa-google-drive"></i> <a href="https://drive.google.com/open?id=18UbKv1psOnMXdsbRxQkpSG6dG9cbG3Y5zspQ07VVGEU" target="_blank">Class Speeds and Feeds Chart</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://hub.pathpilot.com" target="_blank">PathPilot HUB</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://cam.autodesk.com/hsmposts?p=tormach" target="_blank">Tormach PathPilot HSM Post Processor</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://carbide3d.com/downloads/" target="_blank">Carbide 3D - Software Downloads</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://cam.autodesk.com/hsmposts?p=carbide3d" target="_blank">Carbide3D HSM Post Processor</a><br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Begin your documentation. Suggested - use <a href="https://sites.google.com/new?usp=jotspot_si" target="_blank">Google Sites</a><br>
+                  <i class="far fa-check-square"></i> Finish your toolholder from class. Create GCODE from your DXF file and include in your documentation.<br>
+                  <i class="far fa-check-square"></i> Read Chapter 1, 2, & 3 of CNC Trade Secrets - Harvey.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="903">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">9.03 - Milling Introduction</h6>
+                <p>We are going to continue our parts from the previous class. We are going to check our feeds, speeds, simulations, and machine settings while cutting out our tool holder parts.</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Begin your documentation of the previous class. We did CAM process and Conversational on the machines. Make sure to follow the <a href="Docs/ETRDocumentationv2.pdf" target="_blank">guidelines</a> to setup your ideas.<br>
+                  <i class="far fa-check-square"></i> Setup your part from last class and work on importing the post processor into Fusion 360. Double check your simulation to make sure it fits the parameters.<br>
+                  <i class="far fa-check-square"></i> IND250: Export your .nc file to a flash drive and setup Carbide Motion for the job! Setup the workholding for the job.<br>
+                  <i class="far fa-check-square"></i> IND251: Export your DXF from the sketch and import into the base computer on the Tormach 1100. Use the conversational to create your GCODE with two minimal operations. Setup your workholding with a sacrificial part underneath to protect the table. Make sure to measure your tool.
+                </p>
+                <p><strong>Supplemental Materials:</strong><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://carbide3d.com/downloads/" target="_blank">Carbide 3D - Software Downloads</a><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/6D5GkKONO_Q" target="_blank">Carbide Motion Setup Video</a><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/i67V9anV6fY" target="_blank">Titans of CNC - Lie Nielson Factory</a>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Make sure that your part is complete. We need to cut out a total of 4 tool holders for class.<br>
+                  <i class="far fa-check-square"></i> What could be improved on our process? What worked really well? Update your CAM/GCODE accordingly...<br>
+                  <i class="far fa-check-square"></i> Add any information to the <a href="https://drive.google.com/open?id=18UbKv1psOnMXdsbRxQkpSG6dG9cbG3Y5zspQ07VVGEU" target="_blank">Class Speeds and Feeds Chart</a> if needed.<br>
+                  <i class="far fa-check-square"></i> Make sure you finish your foamboard 3D project from the first day of class!<br>
+                  <i class="far fa-check-square"></i> Read Chapter 4 of CNC Trade Secrets - Harvey. Check out the Titans of CNC video above!<br>
+                  <i class="far fa-check-square"></i> Be prepared to finish the parts from this class and begin a new setup to move forward. If you need lab time check the <a href="Docs/FA19LabHours.pdf" target="_blank">lab hours</a> or setup time with me to meet if needed.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="910">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">9.10 - Tooling & Library</h6>
+                <p>We will finish our projects from last class and move forward into building out our tool library. We will develop a class spreadsheet for tools, machines and materials. We will also load this into Fusion and save it for future classes. If time permits we will begin GCODE</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Make sure to continue your documentation! If you need help with formatting let me know.<br>
+                  <i class="far fa-check-square"></i> Finish your foam core project! We will share these at the end of class tinight!<br>
+                  <i class="far fa-check-square"></i> Make sure your projects are updated with the latest version of your CAM/conversational<br>
+                  <i class="far fa-check-square"></i> There will be class time to mill!
+                </p>
+                <p><strong>Supplemental Materials:</strong><br>
+                  <i class="fab fa-youtube"></i> <a href="https://youtu.be/f4jE4wkymo0" target="_blank">Intro to CAM in Fusion Video</a><br>
+                  <i class="far fa-file-pdf"></i> <a href="archived/19sp/SP19IND250/Fundamentals_of_CNC_Machining.pdf" target="_blank">Fundamentals of CNC Machining - Autodesk</a>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Have your foam board project complete with tool to share in class.<br>
+                  <i class="far fa-check-square"></i> Complete your group's tool holder. We should have a total of 4 tool holders in the class minimum.<br>
+                  <i class="far fa-check-square"></i> Add any speeds and feeds from class to the spreadsheet!<br>
+                  <i class="far fa-check-square"></i> We will go over tool library and GCODE next class!<br>
+                  <i class="far fa-check-square"></i> Read Chapter 5 CNC Trade Secrets - Harvey. Read Chapter 3 of Fundamentals of CNC Machining - Autodesk.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="917">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">9.17 - Tooling & GCODE Intro</h6>
+                <p>We are going to continue our progress in developing a deeper understanding of machine communication. We will agree on a tool library for each machine, then we will build it in Fusion. We will also begin hand coding a few examples in GCODE.</p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> What are the major tools for each machine?<br>
+                  <i class="far fa-check-square"></i> What tool holders do we need to access?<br>
+                  <i class="far fa-check-square"></i> Look up the manufacturer's tool holders and datasheets!<br>
+                  <i class="far fa-check-square"></i> Add the tools in a logical order for Fusion 360 and add to our class speadsheet.
+                </p>
+                <p><strong>Supplemental Materials:</strong><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://www.tormach.com/machine-codes/" target="_blank">Tormach Machine Code Reference</a><br>
+                  <i class="far fa-file-pdf"></i> <a href="IND250/Speeds_FeedsCheatsheet.pdf" target="_blank">Speeds & Feeds Cheatsheet</a><br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Make sure everything from previous classes are cut.<br>
+                  <i class="far fa-check-square"></i> Create your simple rectanglular part in Fusion and make a 2D Contour with 2 depth passes.<br>
+                  <i class="far fa-check-square"></i> Post process your work to GCODE and reverse engineer the lines. What do each of the commands mean? Use the Tormach Machine Codes Guide as an example.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="924">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">9.24 - Advanced GCODE</h6>
+                <p>Diving into GCODE and spending some time working through some of the projects. We will create unique shapes in GCODE and finish our projects from previous classes.
+                </p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> What are the top few lines of GCODE in our program that we reverse engineered?<br>
+                  <i class="far fa-check-square"></i> Break down each command and write down its meaning.<br>
+                  <i class="far fa-check-square"></i> Create a simple program for a block on your own using G0 commands.
+                </p>
+                <p><strong>Supplemental Materials:</strong><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://apps.autodesk.com/FUSION/en/Detail/Index?id=2936176173947597837" target="_blank">NC Viewer Plugin for Fusion</a><br>
+                  <i class="fas fa-external-link-alt"></i> <a href="https://ncviewer.com/" target="_blank">Online NC Viewer - ncview.com</a><br>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  <i class="far fa-check-square"></i> Create unique GCODE for the Tormach 1100 making 3 parts.<br>
+                  <i class="far fa-check-square"></i> Make an odd sided part with 2 depths. Pick any tool and make sure you make it around your part.<br>
+                  <i class="far fa-check-square"></i> Pick another shape that can be made with a pattern or has meaning to a part you're creating.<br>
+                  <i class="far fa-check-square"></i> Create a circle with multiple depths.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="1001">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">10.01 - GCODE, Tooling & Maintain</h6>
+                <p>We will review GCODE, test our personal programs, and work through adding tooling into Fusion for our actual library. We will finish any milling projects moving forward.
+                </p>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Test your program in NCViewer.<br>
+                  <i class="far fa-check-square"></i> Run your program on the PCNC1100.<br>
+                  <i class="far fa-check-square"></i> Did it do what you expected? WHat was missing?
+                </p>
+                <p><strong>Supplemental Materials:</strong><br>
+                  <i class="far fa-file-image"></i> <a href="IND250\drillSpeedChart.jpg" target="_blank">Drill Speed Chart</a><br>
+                  <i class="far fa-file-image"></i> <a href="IND250\drillTapChart.jpg" target="_blank">Drill & Tap Chart</a><br>
+                  <i class="fas fa-wrench"></i> <a href="IND250\10.6.19-ToolLibrary.tools" target="_blank">Current Tooling Library</a>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  NO CLASS on 10/8 - FALL BREAK<br>
+                  <i class="far fa-check-square"></i> Make sure your tooling library is up to date.<br>
+                  <i class="far fa-check-square"></i> Read Chapter 6 & 7 CNC Trade Secrets - Harvey. Read Chapter 5 & 6 of Fundamentals of CNC Machining - Autodesk.
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="1008">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">10.08 - FALL BREAK</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="docs-section" id="1015">
+           <div class="container">
+             <div class="row">
+              <div class="column">
+                <h6 class="docs-header">10.15 - 2D CAM Operations</h6>
+                <p><strong>Getting Started:</strong><br>
+                  <i class="far fa-check-square"></i> Take measurements off the vise jaws for the Tormach and Orange County Tools Vise<br>
+                  <i class="far fa-check-square"></i> CAD the model in Fusion and prepare for CAM processes<br>
+                  <i class="far fa-check-square"></i> Check up on your documentation for class!
+                </p>
+                <p><strong>Supplemental Materials:</strong><br>
+                  <i class="far fa-file-pdf"></i> <a href="IND250\week6\tormachJaws5.pdf" target="_blank">Tormach 5" Vise Jaws (Isometric View)- .pdf</a><br>
+                  <i class="fas fa-cube"></i> <a href="IND250\week6\5tormachViseJaws.f3d" target="_blank">Tormach 5" Vise Jaws - .f3d</a><br>
+                  <i class="fas fa-wrench"></i> <a href="IND250\10.24-ToolLibrary.tools" target="_blank">Current Tool Library</a>
+                </p>
+                <p><strong>For next class...</strong><br>
+                  NO CLASS on 10/22<br>
+                  <i class="far fa-check-square"></i> Make sure you are all caught up on your projects. Use Lab time to make up the difference.<br>
+                  <i class="far fa-check-square"></i> Complete your Tool Library and Soft Jaw CAM for class. If you are machining, make sure the soft jaws are ready for the Tormach and Orange Vise.<br>
+                  <i class="far fa-check-square"></i> Use the time to make up any documentation.
+                </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="1022">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">10.22 - NO CLASS</h6>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="docs-section" id="1203">
+             <div class="container">
+               <div class="row">
+                <div class="column">
+                  <h6 class="docs-header">12.3 - Last Class!</h6>
+                  Please make sure that all your pieces to your projects are ready and you are prepared to present on Wednesday, 12/11 @5PM!
+                  <p><strong>Supplemental Materials:</strong><br>
+                    <i class="far fa-file-pdf"></i> <a href="Docs\rubric2019.pdf" target="_blank">Project Rubric & Guidelines - .pdf</a><br>
+                    <strong><i class="far fa-check-square"></i> <a href="https://forms.gle/8WjUhKPiP3wZSnHd6" target="_blank">Final Project & Presentation Submission</a></strong><br>
+                    <strong><i class="far fa-check-square"></i> <a href="https://forms.gle/pWKm1bCVmbgPQox66" target="_blank">Semester Documentation/Portfolio Submission</a></strong>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+  <!-- Footer
+    –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <div class="footer-section">
+    <div class="row">
+      <div class="column" align="center">
+        <p><a href="http://www.ebredder.org">ebredder.org</a> | <i class="far fa-copyright"></i> 2019 - Eric Bredder</p>
+      </div>
+    </div>
+  </div>
+
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

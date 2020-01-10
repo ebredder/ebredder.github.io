@@ -1,0 +1,10 @@
+Partlist exported from C:/Users/Eric/Documents/github/ebredder.github.io/ETR113-NG/wk5/parallelNGtest.sch at 10/17/2019 5:45 PM
+
+Qty Value    Device                          Package                 Parts  Description                                                                                                     PROD_ID    SF_SKU    VALUE
+1            CONN_02PTH4                     1X02_XTRA_BIG           J1     Multi connection point. Often used as Generic Header-pin footprint for 0.1 inch spaced/style header connections                           
+2            LED5MM                          LED_5MM                 D1, D2 LED (Generic)                                                                                                                             
+1   100      POTENTIOMETER-PTH-9MM-1/20W-20% POT-PTH-ALPS            VR1    Potentiometer (Pot)                                                                                             RES-09177  COM-09288 10k  
+1   240      RESISTORAXIAL-0.3               AXIAL-0.3               R3     Generic Resistor Package                                                                                                                  
+1   270      RESISTORAXIAL-0.3               AXIAL-0.3               R1     Generic Resistor Package                                                                                                                  
+1   ?        RESISTORAXIAL-0.3               AXIAL-0.3               R2     Generic Resistor Package                                                                                                                  
+1   SPST12mm MOMENTARY-SWITCH-SPST-PTH-12MM  TACTILE_SWITCH_PTH_12MM S2     Momentary Switch (Pushbutton) - SPST                                                                            SWCH-09185 COM-09190      
